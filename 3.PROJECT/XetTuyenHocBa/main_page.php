@@ -19,7 +19,7 @@
                   <div  class="col-sm-4">
                         <div  class="row">
                               <div  class="col-6 col-md-4">
-                                    <a href="login.php">Login</a> 
+                                    <a href="KhoaCNTT/login.php">Login</a> 
                               </div>
                               <div  class="col-6 col-md-4">
                                     <a href="main_page.php"><img src="images/vi.jpg"></a>
@@ -31,7 +31,7 @@
                               <form class="form-inline" >
                                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                              </form>     
+                              </form>
                         </div>      
                   </div>
             </nav>
