@@ -1,41 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Khoa Công Nghệ Thông Tin</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Khoa Công Nghệ Thông Tin</title>
 </head>
 <body>
+	
+	<header>
+		<nav class="navbar">
+			<div class="col-sm-8">
+				<a class="navbar-brand" href="main_page.php">
+					<img src="images/logo.png">
+				</a>	
+			</div>
+			<div  class="col-sm-4">
+				<div  class="row">
+					<div  class="col-6 col-md-4">
+						<a href="login.php">Login</a>	
+					</div>
+					<div  class="col-6 col-md-4">
+						<a href="main_page.php"><img src="images/vi.jpg"></a>
+						<a href="#"><img src="images/en.jpg"></a>	
+					</div>		
+				</div>
 
-     <form method="post" action="more.php" class="was-validated">
-      <p>
-        <label for="uname">Username:</label>
-        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-        <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      </p>
-      <p>
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-        <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      </p>
-      <p>
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Check this checkbox to continue.</div>
-        </label>
-      </p>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+				<div>
+					<form class="form-inline" >
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>	
+				</div>	
+			</div>
+		</nav>
+	</header>
 
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<form action="process-login.php" method="POST" class="was-validated">
 
+						<div class="form-group" style="margin-top:25px">
+							<label for="username">Tên đăng nhập</label>
+							<input class="form-control" type="text" name="username" id="username" placeholder="tài khoản đăng nhập" required="" ng-model="Username">
+							<div class="valid-feedback">Nhập thành công.</div>
+							<div class="invalid-feedback">Hãy điền đẩy đủ thông tin.</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="password">Mật khẩu</label>
+							<input class="form-control" type="password" name="password" id="password" placeholder="********" required="" ng-model="Password">
+							<div class="valid-feedback">Nhập thành công.</div>
+							<div class="invalid-feedback">Hãy điền đẩy đủ thông tin.</div>
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" class="form-control btn btn-primary" value="Đăng nhập" 
+							name="txtLogin" id="txtLogin" aria-describedby="emailHelpId" placeholder="">
+						</div>
+						
+						<div>
+							<p style="color:#111">
+								<!-- sửa thành trang tạo tài khoản khi có -->
+								Bạn chưa có tài khoản? <a href="#" class="">Gửi yêu cầu</a> tạo tài khoản mới
+							</p>
+						</div>
+						
+						<div>
+							<!-- sửa thành trang đổi mật khẩu khi có -->
+							<a href="#" class="">Bạn đã quên mật khẩu?</a>
+						</div>    
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
