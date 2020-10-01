@@ -39,13 +39,12 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="main_page.php">
+				<img src="images/CSE logo blue.jpg" width="50" height="50">
+			</a>
 
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 				<div class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<div class="active">
-						<a class="nav-link" href="main_page.php"><i class="fa fa-home"></i></a>
-					</div>
 
 					<div class="dropdown">
 						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
