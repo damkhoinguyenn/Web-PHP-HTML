@@ -1,0 +1,51 @@
+.container {
+    padding: 0px;
+}
+
+main{
+    min-height: 400px;
+}
+.feature img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid white !important;
+    border-radius: 20px;
+}
+
+.feature h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    background-color: transparent;
+}
+
+.jumbotron{
+    background-image: url('/static/images/mekong.jpg');
+    background-size: cover;
+}
+
+.jumbotron::before{
+    background-color:rgba(223, 19, 172, 0.4);
+}
+.single-article img{
+    border:1px solid white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.single-article p{
+    text-align: justify;
+}
+

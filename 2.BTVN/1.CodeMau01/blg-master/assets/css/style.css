@@ -1,0 +1,253 @@
+/* DEFAULT STYLING */
+* {
+	margin: 0px; padding: 0px;
+}
+p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: 8px 0px;
+	color: #444;
+	text-align: justify;
+}
+h1, h2, h3 {
+	color: #444;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.btn, a.btn {
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+/*Form elements default styling*/
+form input {
+	width: 100%;
+	display: block;
+	border: none;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin-top: 5px;
+	border-radius: 3px;
+	box-sizing : border-box;
+}
+form input:focus {
+	outline: none;
+}
+form button {
+	background: violet;
+	margin-top: 8px;
+}
+
+/******
+* STYLING FOR NAVBAR
+**************/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3F8742;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #3F8752;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+
+/*******
+* STYLING FOR BANNER
+*/
+.banner {
+	width: 85%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #e4e4e4;
+}
+
+.banner .banner-left {
+	float: left;
+	width: 49%;
+}
+
+.banner .banner-left h1 {
+	margin-bottom: 20px;
+}
+
+.banner .banner-left p {
+	margin-bottom: 20px;
+	line-height: 1.5em;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+a.btn {
+	background: #3B403B;
+	display: inline-block;
+}
+
+.banner .banner-right {
+	float: right;
+	width: 49%;
+}
+
+.message-div {
+	width: 85%;
+	padding: 15px;
+	margin: 10px auto;
+	font-size: 1.2em;
+	color: #3c763d;
+	text-align: center;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	border-radius: 8px;
+	position: relative;
+}
+.message-div span {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.banner .banner-right form {
+	width: 50%;
+	padding: 10px;
+	margin: 25px auto;
+}
+
+.has_error {
+	border: 1px solid red;
+}
+
+
+
+/******
+* STYLING LOGIN PAGE
+**************/
+.register_form {
+	width: 30%;
+	padding: 30px;
+	margin: 25px auto;
+	border-radius: 5px;
+	background: #e4e4e4;
+}
+.register_form h2 {
+	text-align: center;	 
+	margin-bottom: 10px;
+}
+
+
+/******
+* STYLING FOR POSTS
+**************/
+.content {
+	width: 85%;
+	margin: 10px auto;
+	min-height: 200px;
+	border: 1px solid #e4e4e4;
+	padding: 0px 20px;
+
+}
+.posts-wrapper {
+	float: left;
+	width: 60%;
+}
+.sidebar {
+	float: left;
+	width: 32%;
+	margin-left: 20px;
+	padding: 10px 20px;
+}
+
+.categories  {
+	margin-top: 50px;
+}
+.categories h2 {
+	padding: 10px;
+	border: 1px solid #f1f1f1;
+	border-bottom: none;
+}
+.categories li a {
+	display: block;
+	padding: 8px 0px 8px 20px;
+	border: 1px solid #f1f1f1;
+}
+
+.categories li a:hover {
+	background: #f1f1f1;
+}
+
+
+.post {
+	width:95%;
+	padding: 10px;
+	min-height: 300px;
+	margin: 20px auto;
+	border-radius: 5px;
+	border: 1px solid #e4e4e4;
+}
+.post img {
+	width: 100%;
+	max-height: 300px;
+}
+.post-info {
+	margin-top: 10px;
+}
+.post .post-info .author {
+	float: left;
+}
+.post .post-info .readmore {
+	float: right;
+}
+
+.single-page .page-title {
+	text-align: center;
+}
+
+.single-post-info p {
+	text-align: center;
+	color: #767F77;
+}
+
+.underline {
+	width: 30%;
+	margin: 30px auto;
+	border: 1px solid #767F77;
+}
+.footer {
+	min-height: 100px; background-color: #292c2f;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 40px 20px;
+	color: white;
+	margin-top: 80px;
+	overflow: hidden;
+}
+.footer p {
+	color: white;
+}
