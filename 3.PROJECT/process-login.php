@@ -1,25 +1,17 @@
 <?php
-    // Kiem tra
+    // kiểm tra
     $errors = array();
     $email = $_POST['username'];
-	if (empty($email)) {
-		$errors[] = 'You forgot to enter your email address.';
-    }
-
     $password = $_POST['password'];
 	
-	if (empty($password)) {	
-			$errors[] = 'Your two password did not match.';
-	} 
-    // Kiem tra Error:
     if (empty($errors)){
-        // B1: Ket noi database Server;
-        $conn = mysqli_connect('localhost','root','','Project');
+        // kết nối database
+        $conn = mysqli_connect('localhost','root','','project04');
         if(!$conn){
             die('Khong the ket noi');
         }
-        // B2: Khai bao cau truy van
-        $sql = "SELECT * FROM users WHERE email='$email'";
+        // kiểm tra theo email và password
+        $sql = "SELECT * FROM `users` WHERE `email`";
         // echo $sql;
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0){

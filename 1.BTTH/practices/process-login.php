@@ -14,7 +14,7 @@
     // Kiem tra Error:
     if (empty($errors)){
         // B1: Ket noi database Server;
-        $conn = mysqli_connect('localhost','admin','abcabc','simpledb');
+        $conn = mysqli_connect('localhost','root','','Project');
         if(!$conn){
             die('Khong the ket noi');
         }
@@ -33,7 +33,7 @@
                 echo "Chưa khớp";
             }
         }else{
-            echo ".....";
+            echo ".....???";
         }
 
     }else{

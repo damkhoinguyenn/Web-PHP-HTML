@@ -46,7 +46,7 @@
 					<form action="process-login.php" method="POST" class="was-validated">
 
 						<div class="form-group" style="margin-top:25px">
-							<label for="username">Tên đăng nhập</label>
+							<label for="username">Email đăng nhập</label>
 							<input class="form-control" type="text" name="username" id="username" placeholder="tài khoản đăng nhập" required="" ng-model="Username">
 							<div class="valid-feedback">Nhập thành công.</div>
 							<div class="invalid-feedback">Hãy điền đẩy đủ thông tin.</div>
@@ -61,7 +61,7 @@
 						
 						<div class="form-group">
 							<input type="submit" class="form-control btn btn-primary" value="Đăng nhập" 
-							name="txtLogin" id="txtLogin" aria-describedby="emailHelpId" placeholder="">
+							name="txtLogin" id="txtLogin" aria-describedby="emailHelpId">
 						</div>
 						
 						<div>
