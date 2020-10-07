@@ -1,9 +1,9 @@
 <?php
-    include("include/header.php");
+include("include/header.php");
 ?>
 
 <form>
-    <div class="form-group">
+  <div class="form-group">
     <label for="formGroupExampleInput">FirtName</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
   </div>
@@ -28,5 +28,5 @@
 </form>
 
 <?php
-    include("include/footer.php");
+include("include/footer.php");
 ?>
