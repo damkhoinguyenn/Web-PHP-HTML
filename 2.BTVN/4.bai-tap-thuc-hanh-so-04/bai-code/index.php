@@ -48,32 +48,32 @@
                 <th>gender</th>
                 <th>salary</th>
                 <th>birthday</th>
+                <th>edit</th>
+                <th>delete</th>
             </tr>
         </thead>
         <?php
         require('include/connection.php');
-        $sql = "SELECT * FROM users WHERE activation_code = '$code'";
-        $result = mysqli_query($conn, $sql);
-        if (mysqli_num_rows($result) > 0) {
-            $sql = "UPDATE users SET status = '1' WHERE activation_code = '$code'";
-            if (mysqli_query($conn, $sql)) {
-                header("Location: update-thanks.php");
-                exit();
-            }
+        include("include/function.php");
+        $users = getAllUsers();
+        foreach ($users as $row) {
+        ?>
+            <tbody>
+                <tr>
+                    <td scope="row"><?php echo $row[0]; ?></td>
+                    <td><?php echo $row[1]; ?></td>
+                    <td><?php echo $row[2]; ?></td>
+                    <td><?php echo $row[3]; ?></td>
+                    <td><?php echo $row[4]; ?></td>
+                    <td><?php echo $row[5]; ?></td>
+                    <td><a href="edit.php?id=<?php echo $row[0]; ?>">edit</a></td>
+                    <td><a href="delete.php?id=<?php echo $row[0]; ?>">delete</a></td>
+                </tr>
+            </tbody>
+        <?php
         }
         ?>
-        <tbody>
-            <tr>
-                <td scope="row"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td scope="row"></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
+        
     </table>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
