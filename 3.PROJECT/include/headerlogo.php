@@ -15,7 +15,7 @@
   <body>
   <nav class="navbar header">
 			<div class="col-sm-8">
-				<a class="navbar-brand" href="main.php">
+				<a class="navbar-brand" href="trang-truong-cho-sinh-vien.php">
 					<img src="images/cse.jpg">
 				</a>
 			</div>
