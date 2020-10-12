@@ -7,9 +7,12 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+		<div class="col bg-danger">
+            Cột 1
+        </div>
+			<div class="col bg-info">
 				<form action="process-login.php" method="POST" class="was-validated">
-					<h1 class="logins" id="Login"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
+					<h1 class="logins"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 					<div class="form-group" style="margin-top:25px">
 						<label for="username">Email đăng nhập</label>
 						<input class="form-control" type="text" name="username" id="username" placeholder="tài khoản đăng nhập" required="" ng-model="Username">
@@ -41,6 +44,9 @@
 					</div>
 				</form>
 			</div>
+			<div class="col bg-warning">
+            Cột 3
+        </div>
 		</div>
 	</div>
 </body>
