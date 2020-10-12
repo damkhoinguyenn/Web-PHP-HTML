@@ -111,6 +111,6 @@ include("include/header.php");
 
 	<!--//Page Wrapper-->
 
-<?php
-    include("include/footer.php");
-?>
+	<?php
+	include("include/footer.php");
+	?>
