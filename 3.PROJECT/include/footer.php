@@ -1,151 +1,152 @@
 <footer>
 		<!-- Footer -->
-<footer class="page-footer font-small indigo bg-info ">
+		<footer class="page-footer font-small indigo bg-info ">
 
-<!-- Footer Links -->
-<div class="container text-center text-md-left ">
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left ">
 
-  <!-- Grid row -->
-  <div class="row">
+				<!-- Grid row -->
+				<div class="row">
 
-	<!-- Grid column -->
-	<div class="col-md-3 mx-auto">
+					<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
 
-	  <!-- Links -->
-	  
+						<!-- Links -->
 
-	  <ul class="list-unstyled  mt-3 mb-4 ">
-		<li>
-		  <a href="#!" class = " text-white">-Giới thiệu</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Logo của Khoa CNTT</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Lời chào mừng</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Tổ chức</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Hợp tác liên kết</a>
-		</li>
-	  </ul>
 
-	</div>
-	<!-- Grid column -->
+						<ul class="list-unstyled  mt-3 mb-4 ">
+							<li>
+								<a href="#!" class=" text-white">-Giới thiệu</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Logo của Khoa CNTT</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Lời chào mừng</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Tổ chức</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Hợp tác liên kết</a>
+							</li>
+						</ul>
 
-	<hr class="clearfix w-100 d-md-none">
+					</div>
+					<!-- Grid column -->
 
-	<!-- Grid column -->
-	<div class="col-md-3 mx-auto">
+					<hr class="clearfix w-100 d-md-none">
 
-	  <!-- Links -->
-	  
+					<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
 
-	  <ul class="list-unstyled  mt-3 mb-4 ">
-		<li>
-		  <a href="#!"class = " text-white">-Đào tạo</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Mô hình đào tạo</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Đào tạo đại học</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Định hướng ngành nghề</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Đào tạo sau đại học</a>
-		</li>
-	  </ul>
+						<!-- Links -->
 
-	</div>
-	<!-- Grid column -->
 
-	<hr class="clearfix w-100 d-md-none">
+						<ul class="list-unstyled  mt-3 mb-4 ">
+							<li>
+								<a href="#!" class=" text-white">-Đào tạo</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Mô hình đào tạo</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Đào tạo đại học</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Định hướng ngành nghề</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Đào tạo sau đại học</a>
+							</li>
+						</ul>
 
-	<!-- Grid column -->
-	<div class="col-md-3 mx-auto">
+					</div>
+					<!-- Grid column -->
 
-	  <!-- Links -->
-	  
+					<hr class="clearfix w-100 d-md-none">
 
-	  <ul class="list-unstyled  mt-3 mb-4">
-		<li>
-		  <a href="#!"class = " text-white">-Nghiên cứu khoa học</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Thông tin seminar</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Các đề tài, dự án</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Công trình công bố</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Các phòng thí nghiệm</a>
-		</li>
-	  </ul>
+					<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
 
-	</div>
-	<!-- Grid column -->
+						<!-- Links -->
 
-	<hr class="clearfix w-100 d-md-none">
 
-	<!-- Grid column -->
-	<div class="col-md-3 mx-auto">
+						<ul class="list-unstyled  mt-3 mb-4">
+							<li>
+								<a href="#!" class=" text-white">-Nghiên cứu khoa học</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Thông tin seminar</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Các đề tài, dự án</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Công trình công bố</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Các phòng thí nghiệm</a>
+							</li>
+						</ul>
 
-	  <!-- Links -->
-	  
+					</div>
+					<!-- Grid column -->
 
-	  <ul class="list-unstyled mt-3 mb-4">
-		<li>
-		  <a href="#!"class = " text-white">-Công nghệ phần mềm</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Hệ thống thông tin</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Khoa học máy tính</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Kỹ thuật máy tính và mạng</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Toán học</a>
-		</li>
-		<li>
-		  <a href="#!"class = " text-white">-Trung tâm tin học</a>
-		</li>
-	  </ul>
+					<hr class="clearfix w-100 d-md-none">
 
-	</div>
-	<!-- Grid column -->
+					<!-- Grid column -->
+					<div class="col-md-3 mx-auto">
 
-  </div>
-  <!-- Grid row -->
+						<!-- Links -->
 
-</div>
-<!-- Footer Links -->
 
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="main.php"class = " text-white"> CSE.TLU.EDU.VN</a>
-  <h5>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-02435632211. </h5>
-</div>
-<!-- Copyright -->
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>
+								<a href="#!" class=" text-white">-Công nghệ phần mềm</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Hệ thống thông tin</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Khoa học máy tính</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Kỹ thuật máy tính và mạng</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Toán học</a>
+							</li>
+							<li>
+								<a href="#!" class=" text-white">-Trung tâm tin học</a>
+							</li>
+						</ul>
 
-</footer>
-<!-- Footer -->
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+			</div>
+			<!-- Footer Links -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2020 Khoa CNTT-Đại Học Thủy Lợi
+
+				<h6>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-02435632211.Email: <a href="main.php" class=" text-white"> CSE.TLU.EDU.VN</a> </h6>
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
 	</footer>
-	  
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
