@@ -15,7 +15,7 @@
 	<script src="https://kit.fontawesome.com/b83b93c2d0.js" crossorigin="anonymous"></script>
 
 	<!--STYLE CSS-->
-	<link rel="stylesheet" href="css/stule.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 

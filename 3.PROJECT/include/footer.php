@@ -132,9 +132,9 @@
 <!-- Footer Links -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="main.php"class = " text-white"> CSE.TLU.EDU.VN</a>
-  <h5>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-02435632211. </h5>
+<div class="footer-copyright text-center py-3">© 2020 Khoa CNTT-Đại Học Thủy Lợi
+  
+  <h6>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-02435632211.Email: <a href="main.php"class = " text-white"> CSE.TLU.EDU.VN</a> </h6>
 </div>
 <!-- Copyright -->
 
