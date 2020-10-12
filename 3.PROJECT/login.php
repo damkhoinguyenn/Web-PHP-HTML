@@ -7,10 +7,9 @@
 <body>
 	<div class="container">
 		<div class="row">
-		<div class="col bg-danger">
-            Cột 1
-        </div>
-			<div class="col bg-info">
+			<div class="col bg">
+			</div>
+			<div class="col bg">
 				<form action="process-login.php" method="POST" class="was-validated">
 					<h1 class="logins"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 					<div class="form-group" style="margin-top:25px">
@@ -44,9 +43,8 @@
 					</div>
 				</form>
 			</div>
-			<div class="col bg-warning">
-            Cột 3
-        </div>
+			<div class="col bg">
+			</div>
 		</div>
 	</div>
 </body>

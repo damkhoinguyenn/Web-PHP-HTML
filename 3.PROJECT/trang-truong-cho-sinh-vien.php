@@ -1,12 +1,10 @@
-<?php
-include("include/header.php");
-?>
+<header>
+	<?php
+	include("include/header.php");
+	?>
+</header>
 
 <body>
-
-	<!--Page Wrapper-->
-
-	<!--Post slide-->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,8 +39,6 @@ include("include/header.php");
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<!--//Post slide-->
-	<!--Card content-->
 	<div class="card-columns">
 		<div class="card">
 			<img src="images/cse-hallthumb.jpg" class="card-img-top" alt="...">
@@ -107,10 +103,10 @@ include("include/header.php");
 			</div>
 		</div>
 	</div>
-	<!--//Card content-->
+</body>
 
-	<!--//Page Wrapper-->
-
+<footer>
 	<?php
 	include("include/footer.php");
 	?>
+</footer>
