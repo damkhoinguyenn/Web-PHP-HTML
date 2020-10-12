@@ -14,7 +14,7 @@
 	<script src="https://kit.fontawesome.com/b83b93c2d0.js" crossorigin="anonymous"></script>
 
 	<!--STYLE CSS-->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stule.css">
 	
   </head>
   <body>
@@ -38,14 +38,15 @@
 				</div>
 			</div>
 		</nav>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		
+	
+		<div class="header">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
 		<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
 			aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse " id="collapsibleNavId">
-			<ul class="navbar-nav mr-auto text-center mt-2 mt-lg-0">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
 					<a class="nav-link" href="main.php">Trang chủ <span class="sr-only">(current)</span></a>
 				</li>
@@ -126,4 +127,5 @@
 			</ul>
 		</div>
 	</nav>
+	</div>
 </header>

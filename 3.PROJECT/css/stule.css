@@ -2,10 +2,18 @@
   display: block;
   
 }
+.navbar-nav{
+  margin-left: 200px;
+ 
+}
 
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
   
   .card-columns {
@@ -19,6 +27,7 @@
   
   ul.list-unstyled.mt-3.mb-4{
     border-right: 1px dotted white;
+    
   }
 .nav-link{
     color:black !important;
@@ -37,7 +46,7 @@
   position: absolute;
   display: none;
   background-color: dodgerblue;
-  margin: 10px 5px;
+  margin: 10px ;
   padding: 10px 5px;
   z-index: 999;
   font-size: 14px;
@@ -47,9 +56,17 @@
   font-size: 14px;
   color: white;
 }
-.header{
-  
+
+.form-login {
+  width: 25%;
+  padding-top: 60px;
+  margin-left: 40%;
 }
+.h5,h5{
+  text-align: center;
+}
+
+
 
 
 
