@@ -1,6 +1,6 @@
 <header>
 	<?php
-	include("include/header.php");
+	include("include/header-logo.php");
 	?>
 </header>
 
@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<form action="process-login.php" method="POST" class="was-validated">
-					<h5><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h5>
+					<h1 class="logins" id="Login"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 					<div class="form-group" style="margin-top:25px">
 						<label for="username">Email đăng nhập</label>
 						<input class="form-control" type="text" name="username" id="username" placeholder="tài khoản đăng nhập" required="" ng-model="Username">
@@ -46,7 +46,5 @@
 </body>
 
 <footer>
-	<?php
-	include("include/footer.php");
-	?>
+
 </footer>
