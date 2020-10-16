@@ -1,6 +1,7 @@
 <header>
 	<?php
 	include("include/header-logo.php");
+	include("include/functions.php");
 	?>
 </header>
 

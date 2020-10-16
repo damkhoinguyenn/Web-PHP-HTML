@@ -1,4 +1,31 @@
 <?php
+// for login admin & user
+function loginUser()
+{
+    // kiểm tra
+    $errors = array();
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    if (empty($errors)) {
+        global $conn;
+        $sql = "SELECT * FROM `user-login` WHERE `email`";
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+            $password_hash = $row['password'];
+            if (password_verify($password, $password_hash)) {
+                echo "OK, khớp.";
+            } else {
+                echo "Chưa khớp";
+            }
+        } else {
+            echo ".....";
+        }
+    } else {
+        echo "Co loi nhap lieu ...";
+    }
+}
+// for admin
 function getAllClasses()
 {
     global $conn;
@@ -7,16 +34,7 @@ function getAllClasses()
     $class = mysqli_fetch_all($result);
     return $class;
 }
-
-function getOneClass($MaLop)
-{
-    global $conn;
-    $sql = "SELECT * FROM class WHERE MaLop = '$MaLop'";
-    $result = mysqli_query($conn, $sql);
-    $class = mysqli_fetch_assoc($result);
-    return $class;
-}
-
+// for admin
 function deleteClass($MaLop)
 {
     global $conn;
@@ -26,7 +44,8 @@ function deleteClass($MaLop)
     else
         return FALSE;
 }
-function addClass($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
+// for admin
+function addUser($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
 {
     global $conn;
     $sql = "INSERT INTO class (`MaLop`, `TenLopHoc`, `GiaoVien`, `LichHoc`, `HocPhi`, `NgayBatDau`, `NgayKetThuc`,`PhongHoc`) VALUES ($MaLop,$TenLopHoc,$GiaoVien,$LichHoc,$HocPhi,$NgayBatDau,$NgayKetThuc,$PhongHoc)";
@@ -39,7 +58,8 @@ function addClass($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau,
         echo "Them that bai.";
     }
 }
-function editClass($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
+// for admin
+function editUser($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
 {
     global $conn;
     $sql = "UPDATE class SET `MaLop`='$MaLop', `TenLopHoc`='$TenLopHoc', `GiaoVien`='$GiaoVien',`LichHoc`='$LichHoc',`HocPhi`='$HocPhi',`NgayBatDau`='$NgayBatDau',`NgayKetThuc`='$NgayKetThuc',`PhongHoc`='$PhongHoc' where `MaLop` = '$MaLop' ";
