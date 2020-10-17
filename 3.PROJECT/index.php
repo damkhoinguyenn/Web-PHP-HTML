@@ -8,8 +8,8 @@ include("include/header.php");
 ?>
 
 <body>
-    <!-- <h6>Chúc mừng bạn có username là <?php echo $_SESSION['email'];  ?> đã đăng nhập thành công !</h6> -->
-    <h1>DANH SACH LOP HOC</h1>
+    <h6>Chúc mừng <?php echo $_SESSION['email'];  ?> đã đăng nhập thành công !</h6>
+    <h1>DANH SACH SINH VIEN</h1>
     <table class="table">
         <thead>
             <tr>
