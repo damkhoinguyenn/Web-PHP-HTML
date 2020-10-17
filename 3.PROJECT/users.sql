@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: localhost
--- Thời gian đã tạo: Th10 12, 2020 lúc 06:13 AM
--- Phiên bản máy phục vụ: 10.4.6-MariaDB
--- Phiên bản PHP: 7.3.9
+-- Host: 127.0.0.1
+-- Generation Time: Oct 17, 2020 at 10:40 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,47 +18,48 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `Project`
+-- Database: `project`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user-login`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user-login` (
+CREATE TABLE `users` (
   `userId` smallint(6) NOT NULL,
+  `fullName` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `user-login`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `user-login` (`userId`, `email`, `password`) VALUES
-(1, 'dammit2525@gmail.com', 'Damnguyen26'),
-(2, 'Tintran2211@gmail.com', 'TranTin2211');
+INSERT INTO `users` (`userId`, `fullName`, `email`, `password`) VALUES
+(1, '', 'dammit2525@gmail.com', 'Damnguyen26'),
+(2, '', 'Tintran2211@gmail.com', 'TranTin2211');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `user-login`
+-- Indexes for table `users`
 --
-ALTER TABLE `user-login`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`userId`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `user-login`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user-login`
+ALTER TABLE `users`
   MODIFY `userId` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 

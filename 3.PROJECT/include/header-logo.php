@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>TLU.com</title>
+  <title>Khoa Cong Nghe Thong Tin</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
     <div class="col-sm-4">
       <div class="row">
         <div class="col-6 col-md-4">
-          <a href="login.php">Login/<a href="register.php">Register?</a></a>
+          <a href="login.php">Login/<a href="register.php">Register</a></a>
         </div>
         <div class="col-6 col-md-4">
           <a href="trang-truong-cho-sinh-vien.php"><img src="images/vi.jpg"></a>
