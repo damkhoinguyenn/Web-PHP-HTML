@@ -1,54 +1,97 @@
 <?php
 // for login admin & user
-function loginUser()
-{
-    // kiểm tra
-    $errors = array();
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    if (empty($errors)) {
-        global $conn;
-        $sql = "SELECT * FROM `user-login` WHERE `email`";
-        $result = mysqli_query($conn, $sql);
-        if (mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_assoc($result);
-            $password_hash = $row['password'];
-            if (password_verify($password, $password_hash)) {
-                echo "OK, khớp.";
-            } else {
-                echo "Chưa khớp";
-            }
-        } else {
-            echo ".....";
-        }
-    } else {
-        echo "Co loi nhap lieu ...";
-    }
-}
+// function loginUser()
+// {
+// 	$username = $_POST["txtEmail"];
+// 	$password = $_POST["txtPassword"];
+//     // $errors = array();
+//     // if (empty($errors)) {
+//     //     global $conn;
+//     //     $sql = "SELECT * FROM `user-login` WHERE `email`";
+//     //     $result = mysqli_query($conn, $sql);
+//     //     if (mysqli_num_rows($result) > 0) {
+//     //         $row = mysqli_fetch_assoc($result);
+//     //         $password_hash = $row['password'];
+//     //         if (password_verify($password, $password_hash)) {
+//     //             echo "OK, khớp.";
+//     //         } else {
+//     //             echo "Chưa khớp";
+//     //         }
+//     //     } else {
+//     //         echo ".....";
+//     //     }
+//     // } else {
+//     //     echo "Co loi nhap lieu ...";
+//     // }
+
+//     if ($username == "" || $password == "") {
+//         echo "username hoặc password bạn không được để trống!";
+//     } else {
+//         global $conn;
+//         $sql = "SELECT * FROM `users` WHERE email = '$username' and password = '$password' ";
+//         $result = mysqli_query($conn, $sql);
+
+//         if (mysqli_num_rows($result) > 0) {
+//             $row = mysqli_fetch_assoc($result);
+//             $password_hash = $row['password'];
+//             if (password_verify($password, $password_hash)) {
+//                 echo "OK, khớp.";
+//             } elseif (mysqli_num_rows($result) == 0) {
+//                 echo "tên đăng nhập hoặc mật khẩu không đúng !";
+//             } else {
+//                 //lưu tên đăng nhập vào session để tiện xử lý sau này
+//                 $_SESSION['email'] = $username;
+//                 // Thực thi hành động sau khi lưu thông tin vào session
+//                 // ở đây mình tiến hành chuyển hướng trang web tới một trang gọi là index.php
+//                 header('Location: index.php');
+//             }
+//         } else {
+//             echo ".....";
+//         }
+//     }
+// }
 // for admin
-function getAllClasses()
+function getAllUsers()
 {
     global $conn;
-    $sql = "SELECT * FROM class";
+    $sql = "SELECT * FROM `users` ";
     $result = mysqli_query($conn, $sql);
-    $class = mysqli_fetch_all($result);
-    return $class;
+    $user = mysqli_fetch_all($result);
+    return $user;
 }
 // for admin
-function deleteClass($MaLop)
+function getOneUser($email)
 {
     global $conn;
-    $sql = "DELETE FROM class WHERE MaLop = '$MaLop'";
+    $sql = "SELECT * FROM `users` WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_assoc($result);
+    return $user;
+}
+// for admin
+function deleteUser($email)
+{
+    global $conn;
+    $email = $_GET['email'];
+    $sql = "DELETE FROM `users` WHERE email = '$email'";
     if (mysqli_query($conn, $sql))
         return TRUE;
     else
         return FALSE;
+
+    // if (deleteUser($email)) {
+    //     header("Location:index.php");
+    //     exit();
+    // } else {
+    //     echo "Loi gi do ...";
+    // }
+    // mysqli_close($conn);
 }
 // for admin
-function addUser($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
+function addUser($email, $password)
 {
     global $conn;
-    $sql = "INSERT INTO class (`MaLop`, `TenLopHoc`, `GiaoVien`, `LichHoc`, `HocPhi`, `NgayBatDau`, `NgayKetThuc`,`PhongHoc`) VALUES ($MaLop,$TenLopHoc,$GiaoVien,$LichHoc,$HocPhi,$NgayBatDau,$NgayKetThuc,$PhongHoc)";
+    $sql = "INSERT INTO `users`(`email`, `password`) VALUES ($email, $password)";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "Them thanh cong.";
@@ -59,10 +102,10 @@ function addUser($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, 
     }
 }
 // for admin
-function editUser($MaLop, $TenLopHoc, $GiaoVien, $LichHoc, $HocPhi, $NgayBatDau, $NgayKetThuc, $PhongHoc)
+function editUser($fullName, $email, $password)
 {
     global $conn;
-    $sql = "UPDATE class SET `MaLop`='$MaLop', `TenLopHoc`='$TenLopHoc', `GiaoVien`='$GiaoVien',`LichHoc`='$LichHoc',`HocPhi`='$HocPhi',`NgayBatDau`='$NgayBatDau',`NgayKetThuc`='$NgayKetThuc',`PhongHoc`='$PhongHoc' where `MaLop` = '$MaLop' ";
+    $sql = "UPDATE users SET `fullName` ='$fullName', `email`='$email',`password`='$password' where `fullName` = '$fullName' ";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "Sua thanh cong.";
