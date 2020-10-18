@@ -11,30 +11,16 @@ if (isset($_POST["btnLogin"])) {
 	$Email = addslashes($Email);
 	$Password = strip_tags($Password);
 	$Password = addslashes($Password);
-	if ("SELECT * FROM `users` WHERE Email = '$Email' and Password = '$Password'") {
-		$sql = "SELECT * FROM `users` WHERE Email = '$Email' and Password = '$Password'";
-		$result = mysqli_query($conn, $sql);
-		$num_rows = mysqli_num_rows($result);
-		if ($num_rows == 0) {
-			echo "tên đăng nhập hoặc mật khẩu không đúng !";
-		} else {
-			//lưu tên đăng nhập vào session 
-			$_SESSION['FullName'] = $FullName;
-			//chuyển hướng tới trang-truong-cho-sinh-vien.php sau này sửa thành trang cho cựu sinh viên
-			header('Location: trang-truong-cho-cuu-sinh-vien.php');
-		}
-	} elseif ("SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'") {
-		$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
-		$result = mysqli_query($conn, $sql);
-		$num_rows = mysqli_num_rows($result);
-		if ($num_rows == 0) {
-			echo "tên đăng nhập hoặc mật khẩu không đúng !";
-		} else {
-			//lưu tên đăng nhập vào session 
-			$_SESSION['FullName'] = $FullName;
-			//chuyển hướng tới index.php
-			header('Location: index.php');
-		}
+	$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
+	$result = mysqli_query($conn, $sql);
+	$num_rows = mysqli_num_rows($result);
+	if ($num_rows == 0) {
+		echo "tên đăng nhập hoặc mật khẩu không đúng !";
+	} else {
+		//lưu tên đăng nhập vào session 
+		$_SESSION['FullName'] = $FullName;
+		//chuyển hướng tới index.php
+		header('Location: index.php');
 	}
 }
 ?>
