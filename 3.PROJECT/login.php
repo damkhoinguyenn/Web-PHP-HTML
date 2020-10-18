@@ -21,7 +21,7 @@ if (isset($_POST["btnLogin"])) {
 			//lưu tên đăng nhập vào session 
 			$_SESSION['FullName'] = $FullName;
 			//chuyển hướng tới trang-truong-cho-sinh-vien.php sau này sửa thành trang cho cựu sinh viên
-			header('Location: trang-truong-cho-sinh-vien.php');
+			header('Location: trang-truong-cho-cuu-sinh-vien.php');
 		}
 	} elseif ("SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'") {
 		$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
