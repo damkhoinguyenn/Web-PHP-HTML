@@ -107,3 +107,7 @@ function editUser($UserId, $FullName, $Email, $Password)
         echo "Sua that bai.";
     }
 }
+// for admin
+function editPage()
+{
+}
