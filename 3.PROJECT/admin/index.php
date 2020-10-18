@@ -1,14 +1,14 @@
 <!-- admin -->
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['FullName'])) {
     header('Location: trang-truong-cho-sinh-vien.php');
 }
 include("include/header.php");
 ?>
 
 <body>
-    <h6>Chúc mừng <?php echo $_SESSION['email'];  ?> đã đăng nhập thành công !</h6>
+    <h6>Chúc mừng <?php echo $_SESSION['FullName'];  ?> đã đăng nhập thành công !</h6>
     <h1>DANH SACH SINH VIEN</h1>
     <table class="table">
         <thead>

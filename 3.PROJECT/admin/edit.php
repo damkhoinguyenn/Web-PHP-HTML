@@ -1,19 +1,19 @@
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['FullName'])) {
     header('Location: trang-truong-cho-sinh-vien.php');
 }
 include("include/header.php");
 require("include/connection.php");
 include("include/functions.php");
-$email = $_GET['email'];
-$email = getOneUser($email);
+$FullName = $_GET['FullName'];
+$FullName = getOneUser($FullName);
 if (isset($_POST['btnSave'])) {
-    $fullName = $_POST['txtFullName'];
-    $email = $_POST['txtEmail'];
-    $password = $_POST['txtPassword'];
+    $FullName = $_POST['txtFullName'];
+    $Email = $_POST['txtEmail'];
+    $Password = $_POST['txtPassword'];
 
-    editUser($fullName, $email, $password);
+    editUser($UserId, $FullName, $Email, $Password);
 }
 ?>
 
