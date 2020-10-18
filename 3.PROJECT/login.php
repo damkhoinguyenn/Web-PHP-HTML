@@ -1,6 +1,5 @@
 <?php
 include("include/header-logo.php");
-include("include/connection.php");
 // include("include/functions.php");
 
 if (isset($_POST["btnLogin"])) {
@@ -11,17 +10,40 @@ if (isset($_POST["btnLogin"])) {
 	$Email = addslashes($Email);
 	$Password = strip_tags($Password);
 	$Password = addslashes($Password);
-	$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
-	$result = mysqli_query($conn, $sql);
-	$num_rows = mysqli_num_rows($result);
-	if ($num_rows == 0) {
-		echo "tên đăng nhập hoặc mật khẩu không đúng !";
-	} else {
-		//lưu tên đăng nhập vào session 
-		$_SESSION['FullName'] = $FullName;
-		//chuyển hướng tới index.php
-		header('Location: index.php');
-	}
+	$errors = array();
+	if (empty($errors)) {
+        require("include/connection.php");
+        $sql = "SELECT * FROM `admin` WHERE Email = '$Email'";
+        $result = mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result)>0){
+            $row = mysqli_fetch_assoc($result);
+            if(password_verify($Password, $row['Password']))
+            {
+                session_start();
+                $_SESSION['Email'] = $Email;
+                header("Location:index.php");
+                exit();
+            }else{
+                echo "Mat khau ko chinh xac";
+            }
+        }else{
+            echo "Ko ton tai Tai khoan hoac Tai khoan chua duoc kich hoat";
+        }
+
+        }else{
+            echo "Hien thi loi";
+    }
+	// $sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
+	// $result = mysqli_query($conn, $sql);
+	// $num_rows = mysqli_num_rows($result);
+	// if ($num_rows == 0) {
+	// 	echo "tên đăng nhập hoặc mật khẩu không đúng !";
+	// } else {
+	// 	//lưu tên đăng nhập vào session 
+	// 	$_SESSION['FullName'] = $FullName;
+	// 	//chuyển hướng tới index.php
+	// 	header('Location:index.php');
+	// }
 }
 ?>
 

@@ -1,8 +1,9 @@
 <!-- admin -->
 <?php
 session_start();
-if (!isset($_SESSION['FullName'])) {
-    header('Location: trang-truong-cho-sinh-vien.php');
+if(!isset($_SESSION['FullName'])){
+    header("Location: index.php");
+    exit();
 }
 include("include/header.php");
 ?>
@@ -33,8 +34,8 @@ include("include/header.php");
                     <td><?php echo $row[1]; ?></td>
                     <td><?php echo $row[2]; ?></td>
                     <td><?php echo $row[3]; ?></td>
-                    <td><a href="edit.php?MaLop=<?php echo $row[0]; ?>">edit</a></td>
-                    <td><a href="delete.php?MaLop=<?php echo $row[0]; ?>">delete</a></td>
+                    <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
+                    <td><a href="delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
                 </tr>
             </tbody>
         <?php
