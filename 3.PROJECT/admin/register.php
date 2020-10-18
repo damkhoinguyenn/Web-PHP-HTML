@@ -1,17 +1,17 @@
 <!-- admin -->
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['FullName'])) {
   header('Location: trang-truong-cho-sinh-vien.php');
 }
 include("include/header.php");
 if (isset($_POST['btnSave'])) {
   include("include/connection.php");
   require("include/functions.php");
-  $email = $_POST['txtEmail'];
-  $password = $_POST['txtPassword'];
+  $Email = $_POST['txtEmail'];
+  $Password = $_POST['txtPassword'];
 
-  addUser($email, $password);
+  addUser($FullName, $Email, $Password);
 }
 ?>
 

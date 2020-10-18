@@ -2,14 +2,6 @@
 include("include/header-logo.php");
 include("include/connection.php");
 // include("include/functions.php");
-// if (isset($_POST["btnLogin"])) {
-// 	$username = $_POST["txtEmail"];
-// 	$password = $_POST["txtPassword"];
-// 	// làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
-// 	$username = strip_tags($username);
-// 	$username = addslashes($username);
-// 	$password = strip_tags($password);
-// 	$password = addslashes($password);
 
 if (isset($_POST["btnLogin"])) {
 	$username = $_POST["txtEmail"];
@@ -19,16 +11,30 @@ if (isset($_POST["btnLogin"])) {
 	$username = addslashes($username);
 	$password = strip_tags($password);
 	$password = addslashes($password);
-	$sql = "SELECT * FROM `users` WHERE email = '$username' and password = '$password' ";
-	$result = mysqli_query($conn, $sql);
-	$num_rows = mysqli_num_rows($result);
-	if ($num_rows == 0) {
-		echo "tên đăng nhập hoặc mật khẩu không đúng !";
-	} else {
-		//lưu tên đăng nhập vào session 
-		$_SESSION['email'] = $username;
-		//chuyển hướng tới index.php
-		header('Location: index.php');
+	if ("") {
+		$sql = "SELECT * FROM `users` WHERE email = '$username' and password = '$password' ";
+		$result = mysqli_query($conn, $sql);
+		$num_rows = mysqli_num_rows($result);
+		if ($num_rows == 0) {
+			echo "tên đăng nhập hoặc mật khẩu không đúng !";
+		} else {
+			//lưu tên đăng nhập vào session 
+			$_SESSION['email'] = $username;
+			//chuyển hướng tới index.php
+			header('Location: index.php');
+		}
+	} elseif ("") {
+		$sql = "SELECT * FROM `admin` WHERE email = '$username' and password = '$password' ";
+		$result = mysqli_query($conn, $sql);
+		$num_rows = mysqli_num_rows($result);
+		if ($num_rows == 0) {
+			echo "tên đăng nhập hoặc mật khẩu không đúng !";
+		} else {
+			//lưu tên đăng nhập vào session 
+			$_SESSION['email'] = $username;
+			//chuyển hướng tới index.php
+			header('Location: index.php');
+		}
 	}
 }
 
