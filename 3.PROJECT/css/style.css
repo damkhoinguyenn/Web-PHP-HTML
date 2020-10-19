@@ -3,7 +3,7 @@
 }
 
 .navbar-nav {
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .dropdown>.dropdown-toggle:active {
@@ -26,6 +26,7 @@
 
 ul.list-unstyled.mt-3.mb-4 {
     border-right: 1px dotted white;
+    
 }
 
 .nav-link {
