@@ -18,8 +18,9 @@ include("../include/logo.php");
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Password</th>
-                <th>edit</th>
-                <th>delete</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th><a href="logout.php">Logout</a></th>
             </tr>
         </thead>
         <?php
