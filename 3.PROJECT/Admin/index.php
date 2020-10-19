@@ -21,6 +21,7 @@ include("../include/logo.php");
                 <th>Edit</th>
                 <th>Delete</th>
                 <th><a href="logout.php">Logout</a></th>
+                <th><a href="register.php">Register</a></th>
             </tr>
         </thead>
         <?php
