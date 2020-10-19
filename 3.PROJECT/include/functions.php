@@ -25,7 +25,6 @@ function getOneUser($Email)
 function deleteUser($Email)
 {
     global $conn;
-    $FullName = $_GET['FullName'];
     $sql = "DELETE FROM `users` WHERE Email = '$Email'";
     if (mysqli_query($conn, $sql))
         return TRUE;

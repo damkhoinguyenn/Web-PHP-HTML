@@ -5,12 +5,13 @@ if (!isset($_SESSION['Email'])) {
     exit();
 }
 $Email = $_GET['Email'];
-require("include/connection.php");
-include("include/functions.php");
-if (deleteUser($FullName)) {
-    header("Location:index.php");
+require("../include/connection.php");
+include("../include/functions.php");
+if (deleteUser($Email)) {
+    header("Location: index.php");
     exit();
 } else {
-    echo "Loi gi do ...";
+    echo "Có lỗi xin hãy thao tác lại !";
 }
 mysqli_close($conn);
+
