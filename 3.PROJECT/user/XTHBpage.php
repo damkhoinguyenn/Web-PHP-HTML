@@ -1,6 +1,6 @@
 <header>
 	<?php
-		include("include/header.php");
+	include("include/header.php");
 	?>
 </header>
 
