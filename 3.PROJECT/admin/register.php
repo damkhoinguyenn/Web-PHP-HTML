@@ -1,9 +1,9 @@
 <!-- admin -->
 <?php
-session_start();
-if (!isset($_SESSION['FullName'])) {
-  header('Location: trang-truong-cho-sinh-vien.php');
-}
+// session_start();
+// if (!isset($_SESSION['FullName'])) {
+//   header('Location: trang-truong-cho-sinh-vien.php');
+// }
 include("include/header.php");
 if (isset($_POST['btnSave'])) {
   include("include/connection.php");

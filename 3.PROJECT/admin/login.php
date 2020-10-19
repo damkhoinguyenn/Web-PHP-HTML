@@ -1,5 +1,5 @@
 <?php
-include("include/header-logo.php");
+include("../include/logo.php");
 // include("include/functions.php");
 
 if (isset($_POST["btnLogin"])) {
@@ -33,7 +33,7 @@ if (isset($_POST["btnLogin"])) {
 	//     }else{
 	//         echo "Hien thi loi";
 	// }
-	include("./include/connection.php");
+	include("../include/connection.php");
 	$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
 	$result = mysqli_query($conn, $sql);
 	$num_rows = mysqli_num_rows($result);
@@ -43,7 +43,7 @@ if (isset($_POST["btnLogin"])) {
 		//lưu tên đăng nhập vào session 
 		$_SESSION['Email'] = $Email;
 		//chuyển hướng tới index.php
-		header('Location:index.php');
+		header('Location: index.php');
 	}
 }
 ?>
