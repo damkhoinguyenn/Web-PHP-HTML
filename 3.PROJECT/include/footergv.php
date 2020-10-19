@@ -4,19 +4,25 @@
 			<div class="col-md-3 mx-auto">
 				<ul class="list-unstyled  mt-3 mb-4 ">
 					<li>
-						<a href="#!" class=" text-white">-Giới thiệu</a>
+						<a href="#!" class=" text-white">Lịch sử truyền thống</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Logo của Khoa CNTT</a>
+						<a href="#!" class=" text-white">Sứ mạng,tầm nhìn và giá trị</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Lời chào mừng</a>
+						<a href="#!" class=" text-white">Sự kiện & Nhân vật</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Tổ chức</a>
+						<a href="#!" class=" text-white">BCH Đảng bộ</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Hợp tác liên kết</a>
+						<a href="#!" class=" text-white">Hiệu trưởng</a>
+                    </li>
+                    <li>
+						<a href="#!" class=" text-white">Các Hiệu Phó</a>
+                    </li>
+                    <li>
+						<a href="#!" class=" text-white">Cơ sở vật chất</a>
 					</li>
 				</ul>
 			</div>
@@ -24,19 +30,19 @@
 			<div class="col-md-3 mx-auto">
 				<ul class="list-unstyled  mt-3 mb-4 ">
 					<li>
-						<a href="#!" class=" text-white">-Đào tạo</a>
+						<a href="#!" class=" text-white">Đào tạo Thạc sĩ</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Mô hình đào tạo</a>
+						<a href="#!" class=" text-white">Đào tạo Tiến sĩ</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Đào tạo đại học</a>
+						<a href="#!" class=" text-white">Đào tạo Quốc tế</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Định hướng ngành nghề</a>
+						<a href="#!" class=" text-white">Đào tạo Từ xa - BDTX</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Đào tạo sau đại học</a>
+						<a href="#!" class=" text-white">Đào tạo Nghiệp vụ</a>
 					</li>
 				</ul>
 			</div>
@@ -47,16 +53,16 @@
 						<a href="#!" class=" text-white">-Nghiên cứu khoa học</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Thông tin seminar</a>
+						<a href="#!" class=" text-white">Thông tin KHCN</a>
 					</li>
 					<li>
 						<a href="#!" class=" text-white">-Các đề tài, dự án</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Công trình công bố</a>
+						<a href="#!" class=" text-white">Hợp tác KHCN</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Các phòng thí nghiệm</a>
+						<a href="#!" class=" text-white">Hội thảo KHCN</a>
 					</li>
 				</ul>
 			</div>
@@ -64,22 +70,19 @@
 			<div class="col-md-3 mx-auto">
 				<ul class="list-unstyled mt-3 mb-4">
 					<li>
-						<a href="#!" class=" text-white">-Công nghệ phần mềm</a>
+						<a href="#!" class=" text-white">Văn bản pháp quy</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Hệ thống thông tin</a>
+						<a href="#!" class=" text-white">Thư điện tử</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Khoa học máy tính</a>
+						<a href="#!" class=" text-white">Trang cá nhân</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Kỹ thuật máy tính và mạng</a>
+						<a href="#!" class=" text-white">Tìm kiếm cán bộ</a>
 					</li>
 					<li>
-						<a href="#!" class=" text-white">-Toán học</a>
-					</li>
-					<li>
-						<a href="#!" class=" text-white">-Trung tâm tin học</a>
+						<a href="#!" class=" text-white">Dành cho sinh viên</a>
 					</li>
 				</ul>
 			</div>

@@ -1,11 +1,8 @@
 <?php
-	include("include/header.php");
+    include("include/headergv.php");
 ?>
-<!-- Facebook-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="KZvyFyzA">
-</script>
-<!--// Facebook-->
+
+
 
 <div class="container">
     <div class="row">
@@ -46,15 +43,20 @@
 </div>
         </div>
         <div class="col">
-			<div class="fb-page" data-href="https://www.facebook.com/CodingPremium-115831256931511" data-tabs="" 
-            data-width="3000" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/CodingPremium-115831256931511" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CodingPremium-115831256931511">CodingPremium</a></blockquote>
-            </div>	
-		
             
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g2bFaOrbESE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+
+
 <?php
-include("include/footer.php");
+    include("include/footergv.php");
 ?>
