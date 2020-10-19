@@ -1460,8 +1460,10 @@ include("../include/header.php");
 				</table>
 			</div>
 		</div>
+
 		<div class="col bg">
 		</div>
+
 	</div>
 </div>
 
