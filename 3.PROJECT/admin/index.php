@@ -1,11 +1,11 @@
 <!-- admin -->
 <?php
 session_start();
-if(!isset($_SESSION['Email'])){
-    header("Location: ../user/SVpage.php");
-    exit();
-}
-include("../include/header.php");
+// if(!isset($_SESSION['Email'])){
+//     header("Location: login.php");
+//     exit();
+// }
+include("../include/logo.php");
 ?>
 
 <body>

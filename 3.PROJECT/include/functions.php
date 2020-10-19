@@ -94,10 +94,10 @@ function addUser($FullName, $Email, $Password)
     }
 }
 // for admin
-function editUser($UserId, $FullName, $Email, $Password)
+function editUser($FullName, $Email, $Password)
 {
     global $conn;
-    $sql = "UPDATE `users` SET `UserId`='$UserId', `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `FullName` = '$FullName' ";
+    $sql = "UPDATE `users` SET `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `Email` = '$Email' ";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "Sua thanh cong.";
