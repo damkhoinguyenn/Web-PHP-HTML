@@ -1,15 +1,15 @@
 <!-- admin -->
 <?php
 session_start();
-if(!isset($_SESSION['FullName'])){
-    header("Location: index.php");
+if(!isset($_SESSION['Email'])){
+    header("Location: SVpage.php");
     exit();
 }
-include("Includes/Logo.php");
+include("./include/header.php");
 ?>
 
 <body>
-    <h6>Chúc mừng <?php echo $_SESSION['FullName'];  ?> đã đăng nhập thành công !</h6>
+    <h6>Chúc mừng <?php echo $_SESSION['Email'];  ?> đã đăng nhập thành công !</h6>
     <h1>DANH SACH SINH VIEN</h1>
     <table class="table">
         <thead>
