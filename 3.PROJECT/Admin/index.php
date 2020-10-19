@@ -5,7 +5,7 @@ if(!isset($_SESSION['FullName'])){
     header("Location: index.php");
     exit();
 }
-include("include/header.php");
+include("Includes/Logo.php");
 ?>
 
 <body>
