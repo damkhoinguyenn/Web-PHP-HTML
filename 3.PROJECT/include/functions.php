@@ -60,20 +60,20 @@ function getAllUsers()
     return $user;
 }
 // for admin
-function getOneUser($FullName)
+function getOneUser($Email)
 {
     global $conn;
-    $sql = "SELECT * FROM `users` WHERE FullName = '$FullName'";
+    $sql = "SELECT * FROM `users` WHERE Email = '$Email'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_assoc($result);
     return $user;
 }
 // for admin
-function deleteUser($FullName)
+function deleteUser($Email)
 {
     global $conn;
     $FullName = $_GET['FullName'];
-    $sql = "DELETE FROM `users` WHERE FullName = '$FullName'";
+    $sql = "DELETE FROM `users` WHERE Email = '$Email'";
     if (mysqli_query($conn, $sql))
         return TRUE;
     else
@@ -94,14 +94,14 @@ function addUser($FullName, $Email, $Password)
     }
 }
 // for admin
-function editUser($UserId, $FullName, $Email, $Password)
+function editUser($FullName, $Email, $Password)
 {
     global $conn;
-    $sql = "UPDATE `users` SET `UserId`='$UserId', `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `FullName` = '$FullName' ";
+    $sql = "UPDATE `users` SET `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `Email` = '$Email' ";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "Sua thanh cong.";
-        header("Location:index.php");
+        header("Location: index.php");
         exit();
     } else {
         echo "Sua that bai.";

@@ -30,7 +30,7 @@
     <div class="col-sm-4">
       <div class="row">
         <div class="col-6 col-md-4">
-          <a href="../admin/login.php">Login/<a href="../admin/register.php">Register</a></a>
+          <a href="../admin/login.php">Login</a>
         </div>
         <div class="col-6 col-md-4">
           <a href="../user/SVpage.php"><img src="../images/vi.jpg"></a>

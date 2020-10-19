@@ -1,13 +1,15 @@
 <!-- admin -->
 <?php
-// session_start();
-// if (!isset($_SESSION['FullName'])) {
-//   header('Location: trang-truong-cho-sinh-vien.php');
-// }
-include("include/header.php");
+session_start();
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
+}
+include("../include/logo.php");
 if (isset($_POST['btnSave'])) {
-  include("include/connection.php");
-  require("include/functions.php");
+  include("../include/connection.php");
+  require("../include/functions.php");
+  $FullName = $_POST['txtFullName'];
   $Email = $_POST['txtEmail'];
   $Password = $_POST['txtPassword'];
 
@@ -20,6 +22,11 @@ if (isset($_POST['btnSave'])) {
     <div class="col-md-12">
       <form action="" method="POST">
         <h1>Them Sinh Vien</h1>
+
+        <div class="form-group">
+          <label for="txtFullName">Full Name</label>
+          <input type="text" class="form-control" name="txtFullName" id="txtFullName">
+        </div>
 
         <div class="form-group">
           <label for="txtEmail">Email</label>
@@ -49,5 +56,5 @@ if (isset($_POST['btnSave'])) {
 </main>
 
 <?php
-include("include/footer.php");
+include("../include/footer.php");
 ?>
