@@ -1,15 +1,15 @@
 <!-- admin -->
 <?php
 session_start();
-// if(!isset($_SESSION['Email'])){
-//     header("Location: login.php");
-//     exit();
-// }
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
+}
 include("../include/logo.php");
 ?>
 
 <body>
-    <!-- <h6>Chúc mừng <?php echo $_SESSION['Email'];  ?> đã đăng nhập thành công !</h6> -->
+    <h6>Chúc mừng <?php echo $_SESSION['Email'];  ?> đã đăng nhập thành công !</h6>
     <h1>DANH SACH SINH VIEN</h1>
     <table class="table">
         <thead>

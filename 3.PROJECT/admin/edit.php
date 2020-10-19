@@ -1,12 +1,13 @@
 <?php
 session_start();
-if (!isset($_SESSION['FullName'])) {
-    header('Location: login.php');
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
 }
 require("../include/connection.php");
 include("../include/functions.php");
-$FullName = $_GET['FullName'];
-$user = getOneUser($FullName);
+$Email = $_GET['Email'];
+$user = getOneUser($Email);
 include("../include/logo.php");
 if (isset($_POST['btnSave'])) {
     $FullName = $_POST['txtFullName'];
