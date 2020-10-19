@@ -1,7 +1,7 @@
 <?php
 $FullName = $_GET['FullName'];
-require("Includes/Connection.php");
-include("Includes/Functions.php");
+require("include/connection.php");
+include("include/functions.php");
 if (deleteUser($FullName)) {
     header("Location:index.php");
     exit();
