@@ -14,4 +14,3 @@ if (deleteUser($Email)) {
     echo "Có lỗi xin hãy thao tác lại !";
 }
 mysqli_close($conn);
-

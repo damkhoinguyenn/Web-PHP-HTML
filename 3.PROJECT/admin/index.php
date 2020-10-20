@@ -5,7 +5,7 @@ if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
-include("../include/logo.php");
+include("../include/header/headerAdmin.php");
 ?>
 
 <body>
@@ -47,5 +47,5 @@ include("../include/logo.php");
 </body>
 
 <?php
-include("../include/footer.php");
+include("../include/footer/footerAdmin.php");
 ?>
