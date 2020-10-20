@@ -1,8 +1,8 @@
 <?php
 // for login admin & user
-function loginUser()
-{
-}
+// function loginUser()
+// {
+// }
 // for admin
 function getAllUsers()
 {
@@ -32,19 +32,19 @@ function deleteUser($Email)
         return FALSE;
 }
 // for admin
-function addUser($FullName, $Email, $Password)
-{
-    global $conn;
-    $sql = "INSERT INTO `users`( `FullName`, `Email`, `Password`) VALUES ('$FullName', '$Email', '$Password')";
-    $result = mysqli_query($conn, $sql);
-    if ($result) {
-        echo "Them thanh cong.";
-        header("Location:index.php");
-        exit();
-    } else {
-        echo "Them that bai.";
-    }
-}
+// function addUser($FullName, $Email, $Password)
+// {
+//     global $conn;
+//     $sql = "INSERT INTO `users`( `FullName`, `Email`, `Password`) VALUES ('$FullName', '$Email', '$Password')";
+//     $result = mysqli_query($conn, $sql);
+//     if ($result) {
+//         echo "Them thanh cong.";
+//         header("Location:index.php");
+//         exit();
+//     } else {
+//         echo "Them that bai.";
+//     }
+// }
 // for admin
 function editUser($FullName, $Email, $Password)
 {
