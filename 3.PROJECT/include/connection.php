@@ -5,6 +5,5 @@ $pass = '';
 $db   = 'Project';
 $conn =  mysqli_connect($host, $user, $pass, $db);
 if (!$conn) {
-    die('Khong the ket noi vi ..');
-    exit();
+    die("Kết nối bị lỗi vì :" . mysqli_connect_error());
 }

@@ -1,5 +1,5 @@
 <?php
-include("../include/header.php");
+include("../include/header/header.php");
 ?>
 
 <!--Facebook-->
@@ -96,5 +96,5 @@ include("../include/header.php");
 </div>
 
 <?php
-include("../include/footer.php");
+include("../include/footer/footer.php");
 ?>

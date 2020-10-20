@@ -1,11 +1,16 @@
 <?php
-$FullName = $_GET['FullName'];
-require("include/connection.php");
-include("include/functions.php");
-if (deleteUser($FullName)) {
-    header("Location:index.php");
+session_start();
+if (!isset($_SESSION['FullName'])) {
+    header("Location: login.php");
+    exit();
+}
+$Email = $_GET['Email'];
+require("../include/connection.php");
+include("../include/functions.php");
+if (deleteUser($Email)) {
+    header("Location: index.php");
     exit();
 } else {
-    echo "Loi gi do ...";
+    echo "Có lỗi xin hãy thao tác lại !";
 }
 mysqli_close($conn);
