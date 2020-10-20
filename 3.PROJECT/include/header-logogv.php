@@ -17,24 +17,15 @@
   <script src="https://kit.fontawesome.com/b83b93c2d0.js" crossorigin="anonymous"></script>
 
   <!--STYLE CSS-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <nav class="navbar header">
     <div class="col-sm-8">
-      <a class="navbar-brand" href="trang-truong-cho-sinh-vien.php">
-        <img src="images/cse.jpg">
+      <a class="navbar-brand" href="../user/GVpage.php">
+        <img src="../images/logotlu.png">
       </a>
-    </div>
-    <div class="col-sm-4">
-      <div class="row">
-        <div class="col-6 col-md-4">
-          <a href="trang-truong-cho-sinh-vien.php"><img src="images/vi.jpg"></a>
-          <!-- trang tieng anh -->
-          <a href="#"><img src="images/en.jpg"></a>
-        </div>
-      </div>
     </div>
   </nav>
 </body>

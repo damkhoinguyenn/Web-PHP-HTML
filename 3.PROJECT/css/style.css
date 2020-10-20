@@ -5,6 +5,9 @@
 .navbar-nav {
     margin-left: 150px;
 }
+.gv{
+    margin-left: 250px;
+}
 
 .dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
@@ -61,6 +64,7 @@ ul.list-unstyled.mt-3.mb-4 {
     padding-top: 60px;
     margin-left: 40%;
 }
+
 
 
 /* .h5,

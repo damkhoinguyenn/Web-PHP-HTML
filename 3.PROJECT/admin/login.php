@@ -10,7 +10,7 @@ if (isset($_POST["btnLogin"])) {
 	$Email = addslashes($Email);
 	$Password = strip_tags($Password);
 	$Password = addslashes($Password);
-<<<<<<< Updated upstream:3.PROJECT/admin/login.php
+//<<<<<<< Updated upstream:3.PROJECT/admin/login.php
 	// $errors = array();
 	// if (empty($errors)) {
 	//     require("include/connection.php");
@@ -35,8 +35,8 @@ if (isset($_POST["btnLogin"])) {
 	//         echo "Hien thi loi";
 	// }
 	include("../include/connection.php");
-=======
->>>>>>> Stashed changes:3.PROJECT/login.php
+
+//>>>>>>> Stashed changes:3.PROJECT/login.php
 	$sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
 	$result = mysqli_query($conn, $sql);
 	$num_rows = mysqli_num_rows($result);
