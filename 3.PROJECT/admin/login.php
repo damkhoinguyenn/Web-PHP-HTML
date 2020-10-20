@@ -1,7 +1,6 @@
 <?php
 session_start();
 include("../include/header/headerAdmin.php");
-// include("../include/functions.php");
 
 if (isset($_POST["btnLogin"])) {
 	$Email = $_POST["txtEmail"];
@@ -30,7 +29,7 @@ if (isset($_POST["btnLogin"])) {
 		</div>
 
 		<div class="col bg">
-			<form action="" method="POST" class="was-validated">
+			<form action="operation/login.php" method="POST" class="was-validated">
 				<h1 class="logins"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 
 				<div class="form-group" style="margin-top:25px">
