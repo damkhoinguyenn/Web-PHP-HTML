@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../include/logo.php");
+include("../include/header/headerAdmin.php");
 // include("../include/functions.php");
 
 if (isset($_POST["btnLogin"])) {
@@ -71,3 +71,7 @@ if (isset($_POST["btnLogin"])) {
 
 	</div>
 </div>
+
+<?php
+include("../include/footer/footerAdmin.php");
+?>

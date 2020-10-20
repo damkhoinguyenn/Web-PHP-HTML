@@ -8,7 +8,7 @@ require("../include/connection.php");
 include("../include/functions.php");
 $Email = $_GET['Email'];
 $user = getOneUser($Email);
-include("../include/logo.php");
+include("../include/header/headerAdmin.php");
 if (isset($_POST['btnSave'])) {
     $FullName = $_POST['txtFullName'];
     $Email = $_POST['txtEmail'];
@@ -57,5 +57,5 @@ if (isset($_POST['btnSave'])) {
 </body>
 
 <?php
-include("../include/footer.php");
+include("../include/footer/footerAdmin.php");
 ?>

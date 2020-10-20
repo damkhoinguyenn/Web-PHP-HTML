@@ -2,10 +2,10 @@
 <?php
 session_start();
 if (!isset($_SESSION['Email'])) {
-    header("Location: login.php");
-    exit();
+  header("Location: login.php");
+  exit();
 }
-include("../include/logo.php");
+include("../include/header/headerAdmin.php");
 if (isset($_POST['btnSave'])) {
   include("../include/connection.php");
   require("../include/functions.php");
@@ -56,5 +56,5 @@ if (isset($_POST['btnSave'])) {
 </main>
 
 <?php
-include("../include/footer.php");
+include("../include/footer/footerAdmin.php");
 ?>
