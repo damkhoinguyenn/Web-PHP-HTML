@@ -9,7 +9,7 @@ if (isset($_POST['btnSave'])) {
 
     // kiểm tra lỗi, thiếu dữ liệu
     if (empty($FullName) || empty($Email) || empty($Password) || empty($PasswordRepeat)) {
-        header("Location: ../register.php?error=emptyfield&fullname=" . $FullName . "&email=" . $Email);
+        header("Location: ../register.php?error=emptyfields&fullname=" . $FullName . "&email=" . $Email);
         exit();
     } // nếu cả email và fullname đều nhập sai
     // elseif (!filter_var($Email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $FullName)) {
@@ -27,16 +27,18 @@ if (isset($_POST['btnSave'])) {
     // } 
     // nếu 2 password nhập không giống nhau
     elseif ($Password !== $PasswordRepeat) {
-        header("Location: ../register.php?error=passwordcheckfullname=" . $FullName . "&email=" . $Email);
+        header("Location: ../register.php?error=passwordcheck&fullname=" . $FullName . "&email=" . $Email);
         exit();
     } // kiểm tra email đã tồn tại trong db hay chưa
     else {
-        $sql = "SELECT * FROM `users` WHERE Email=?";
+        $sql = "SELECT * FROM `users` WHERE Email = ?";
         $result = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($result, $sql)) {
             header("Location: ../register.php?error=sqlerror");
             exit();
         } else {
+            // tránh bị lộ dữ liệu
+            // gán giá trị lấy được vào trong select để đẩy về db
             mysqli_stmt_bind_param($result, "s", $Email);
             mysqli_stmt_execute($result);
             mysqli_stmt_store_result($result);
@@ -53,6 +55,8 @@ if (isset($_POST['btnSave'])) {
                 } else {
                     // mã hóa password gửi về db
                     $hashedPassword = password_hash($Password, PASSWORD_DEFAULT);
+                    // tránh bị lộ dữ liệu
+                    // gán giá trị lấy được vào trong select để đẩy về db
                     mysqli_stmt_bind_param($result, "sss", $FullName, $Email, $hashedPassword);
                     mysqli_stmt_execute($result);
                     header("Location: ../index.php");
@@ -64,6 +68,6 @@ if (isset($_POST['btnSave'])) {
     mysqli_stmt_close($result);
     mysqli_close($conn);
 } else {
-    header("Location: ../register.php");
+    header("Location: ../login.php");
     exit();
 }

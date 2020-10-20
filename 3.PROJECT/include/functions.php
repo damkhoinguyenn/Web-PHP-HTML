@@ -1,8 +1,8 @@
 <?php
 // for login admin & user
-function loginUser()
-{
-}
+// function loginUser()
+// {
+// }
 // for admin
 function getAllUsers()
 {
