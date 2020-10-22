@@ -1,7 +1,6 @@
 <?php
 if (isset($_POST['btnLogin'])) {
     require '../../include/connection.php';
-    // $FullName = $_POST["txtFullName"];
     $Email = $_POST["txtEmail"];
     $Password = $_POST["txtPassword"];
 
@@ -25,7 +24,7 @@ if (isset($_POST['btnLogin'])) {
                 // kiểm tra password nhập vào có khớp với password trong db hay không
                 $PasswordCheck = password_verify($Password, $row['Password']);
                 if ($PasswordCheck == false) {
-                    header("Location: ../login.php?error=wrongpassword");
+                    header("Location: ../login.php?error=passworddoesnotmatchdatabase");
                     exit();
                 }
                 // Không dùng else mà dùng elseif vì có khả năng passwordcheck sẽ nhận là string 
@@ -33,8 +32,8 @@ if (isset($_POST['btnLogin'])) {
                 elseif ($PasswordCheck == true) {
                     session_start();
                     $_SESSION['FullName'] = $row['FullName'];
-                    $_SESSION['Email'] = $row['Email'];
-                    header('Location: index.php');
+                    // $_SESSION['Email'] = $row['Email'];
+                    header('Location: ../index.php');
                 } else {
                     header("Location: ../login.php?error=wrongpassword");
                     exit();
@@ -49,3 +48,25 @@ if (isset($_POST['btnLogin'])) {
     header("Location: ../login.php");
     exit();
 }
+
+
+// if (isset($_POST["btnLogin"])) {
+//     $Email = $_POST["txtEmail"];
+//     $Password = $_POST["txtPassword"];
+//     // làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
+//     $Email = strip_tags($Email);
+//     $Email = addslashes($Email);
+//     $Password = strip_tags($Password);
+//     $Password = addslashes($Password);
+//     include("../../include/connection.php");
+//     $sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
+//     $result = mysqli_query($conn, $sql);
+//     $num_rows = mysqli_num_rows($result);
+//     if ($num_rows == 0) {
+//         echo "Tên đăng nhập hoặc mật khẩu không đúng !";
+//     } else {
+//         session_start();
+//         $_SESSION['Email'] = $Email;
+//         header('Location: ../index.php');
+//     }
+// }
