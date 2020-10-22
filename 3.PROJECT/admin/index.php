@@ -19,13 +19,14 @@ include("../include/header/headerAdmin.php");
                 <th>Password</th>
                 <th>Edit</th>
                 <th>Delete</th>
+                <th><a href="editPage.php"></a>Edit Page</th>
                 <th><a href="operation/logout.php">Logout</a></th>
                 <th><a href="register.php">Register</a></th>
             </tr>
         </thead>
         <?php
-        require('../include/connection.php');
-        include("../include/functions.php");
+        require('../include/func/connection.php');
+        include("../include/func/functions.php");
         $users = getAllUsers();
         foreach ($users as $row) {
         ?>

@@ -4,25 +4,14 @@ if (!isset($_SESSION['FullName'])) {
     header("Location: login.php");
     exit();
 }
-require("../include/connection.php");
-include("../include/functions.php");
-$Email = $_GET['Email'];
-$user = getOneUser($Email);
-include("../include/header/headerAdmin.php");
-if (isset($_POST['btnSave'])) {
-    $FullName = $_POST['txtFullName'];
-    $Email = $_POST['txtEmail'];
-    $Password = $_POST['txtPassword'];
-
-    editUser($FullName, $Email, $Password);
-}
+include("../include/header/headerAdmin.php")
 ?>
 
 <body>
     <main class="container">
         <div class="row">
             <div class="col-md-12">
-                <form action="" method="POST">
+                <form action="operation/edit.php" method="POST">
                     <div class="form-group">
                         <label for="txtFullName">Full Name</label>
                         <input type="text" class="form-control" name="txtFullName" id="txtFullName" value="<?php echo $user['FullName']; ?>">
