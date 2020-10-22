@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 	<div class="container">
 		<div class="col-2">
@@ -34,7 +33,7 @@
 	<div class="row">
 		<div class="col-12">
 			<?php
-			include("../include/headergv.php");
+			include("../include/header/headergv.php");
 			?>
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -78,14 +77,50 @@
 	<div class="row">
 		<div class="col">
 			<button type="button" class="btn btn-primary btn-lg btn-block">Tin tức</button>
-			<div class="card mb-3" style="max-width: 540px;">
+			<div class="card" style="height:100px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-						<a href="#" class="stretched-link">Trường ĐH Thủy Lợi chào đón tân sinh viên khóa K62</a>
+							<a href="#" class="stretched-link">Trường ĐH Thủy Lợi chào đón tân sinh viên khóa K62</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card " style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Chùm ảnh: Tân sinh viên hào hứng trong ngày nhập học đầu tiên</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card" style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Hội thảo tuyển dụng Kỹ sư làm việc tại Nhật Bản</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card" style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Đảng bộ Trường Đại học Thủy lợi thực hiện thắng lợi các nhiệm vụ 9 tháng đầu năm 2020</a>
 						</div>
 					</div>
 				</div>
@@ -94,18 +129,55 @@
 
 		<div class="col">
 			<button type="button" class="btn btn-primary btn-lg btn-block">Sự kiện</button>
-			<div class="card mb-3" style="max-width: 540px;">
+			<div class="card" style="height:100px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-						<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="card" style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card" style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card" style="height:100px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		<div class="col">
 			<div class="embed-responsive embed-responsive-16by9">
@@ -122,4 +194,4 @@
 
 
 <?php
-include("../include/footergv.php");
+include("../include/footer/footerGV.php");

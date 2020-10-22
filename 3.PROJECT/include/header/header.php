@@ -1,5 +1,5 @@
 <?php
-include("../include/logo.php");
+	include("logo.php");
 ?>
 
 <body>

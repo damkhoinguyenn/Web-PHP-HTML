@@ -1,5 +1,5 @@
 <?php
-include("../include/header-logogv.php");
+include("logoGV.php");
 ?>
 
 <body>
