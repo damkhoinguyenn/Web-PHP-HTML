@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 include("../include/header/headerAdmin.php");
 // if (isset($_POST["btnLogin"])) {
 //     $Email = $_POST["txtEmail"];
@@ -9,14 +9,14 @@ include("../include/header/headerAdmin.php");
 //     // $Email = addslashes($Email);
 //     // $Password = strip_tags($Password);
 //     // $Password = addslashes($Password);
-//     include("../include/connection.php");
+//     include("../include/func/connection.php");
 //     $sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
 //     $result = mysqli_query($conn, $sql);
 //     $num_rows = mysqli_num_rows($result);
 //     if ($num_rows == 0) {
 //         echo "Tên đăng nhập hoặc mật khẩu không đúng !";
 //     } else {
-//         // session_start();
+//         session_start();
 //         // $_SESSION['FullName'] = $row['FullName'];
 //         $_SESSION['Email'] = $Email;
 //         header('Location: index.php');
@@ -38,13 +38,13 @@ include("../include/header/headerAdmin.php");
 					<input class="form-control" type="text" name="txtFullName" id="txtFullName" placeholder="Tên đăng nhập"" required="">
 				</div> -->
 				<?php
-				if (isset($_GET['error'])) {
-					if ($_GET['error'] == 'emptyfields') {
-						echo '<p class="signuperror">Fill in all foelds !</p>';
-					} elseif ($_GET['error'] == 'wrongpassword') {
-						echo '<p class="signuperror">Wrong Password !</p>';
-					}
-				}
+				// if (isset($_GET['error'])) {
+				// 	if ($_GET['error'] == 'emptyfields') {
+				// 		echo '<p class="signuperror">Fill in all foelds !</p>';
+				// 	} elseif ($_GET['error'] == 'wrongpassword') {
+				// 		echo '<p class="signuperror">Wrong Password !</p>';
+				// 	}
+				// }
 				?>
 				<div class=" form-group" style="margin-top:25px">
 					<label for="txtEmail">Email</label>

@@ -1,16 +1,23 @@
 <?php
 session_start();
-if (!isset($_SESSION['FullName'])) {
+if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
 $Email = $_GET['Email'];
-require("../include/connection.php");
-include("../include/functions.php");
-if (deleteUser($Email)) {
+require("../include/func/connection.php");
+
+$sql = "DELETE FROM `users` WHERE Email = '$Email'";
+if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
     exit();
-} else {
+} else
     echo "Có lỗi xin hãy thao tác lại !";
-}
+
+// if (deleteUser($Email)) {
+//     header("Location: index.php");
+//     exit();
+// } else {
+//     echo "Có lỗi xin hãy thao tác lại !";
+// }
 mysqli_close($conn);
