@@ -1,21 +1,10 @@
-<!-- admin -->
 <?php
 session_start();
-if (!isset($_SESSION['FullName'])) {
+if (!isset($_SESSION['Email'])) {
   header("Location: login.php");
   exit();
 }
 include("../include/header/headerAdmin.php");
-// if (isset($_POST['btnSave'])) {
-//   include("../include/connection.php");
-//   require("../include/functions.php");
-//   $FullName = $_POST['txtFullName'];
-//   $Email = $_POST['txtEmail'];
-//   $Password = $_POST['txtPassword'];
-//   $PasswordRepeat = $_POST['txtPasswordRepeat'];
-
-//   addUser($FullName, $Email, $Password);
-// }
 ?>
 
 <main class="container">

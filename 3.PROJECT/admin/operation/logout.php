@@ -1,5 +1,5 @@
 <?php
 session_start();
-session_unset($_SESSION['FullName']);
+session_unset($_SESSION['Email']);
 session_destroy();
-header('location: login.php');
+header('location: ../login.php');
