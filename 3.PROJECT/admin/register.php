@@ -1,7 +1,7 @@
 <!-- admin -->
 <?php
 session_start();
-if (!isset($_SESSION['Email'])) {
+if (!isset($_SESSION['FullName'])) {
   header("Location: login.php");
   exit();
 }

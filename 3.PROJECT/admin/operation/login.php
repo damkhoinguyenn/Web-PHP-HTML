@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['btnLogin'])) {
-    require '../../include/connection.php';
+    require '../../include/func/connection.php';
     $Email = $_POST["txtEmail"];
     $Password = $_POST["txtPassword"];
 
