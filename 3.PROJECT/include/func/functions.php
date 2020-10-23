@@ -12,6 +12,7 @@ function getAllUsers()
 function getOneUser($Email)
 {
     global $conn;
+    $Email = $_REQUEST['Email'];
     $sql = "SELECT * FROM `users` WHERE Email = '$Email'";
     $result = mysqli_query($conn, $sql);
     $user = mysqli_fetch_assoc($result);

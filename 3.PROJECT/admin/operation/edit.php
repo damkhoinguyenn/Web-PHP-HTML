@@ -4,11 +4,11 @@ include("../../include/func/functions.php");
 $Email = $_GET['Email'];
 $user = getOneUser($Email);
 if (isset($_POST['btnSave'])) {
-    $FullName = $_POST['txtFullName'];
-    $Email = $_POST['txtEmail'];
-    $Password = $_POST['txtPassword'];
+    $FullName = $_REQUEST['txtFullName'];
+    $Email = $_REQUEST['txtEmail'];
+    $Password = $_REQUEST['txtPassword'];
 
-    $sql = "UPDATE `users` SET `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `Email` = '$Email' ";
+    $sql = "UPDATE `users` SET `FullName`='" . $FullName . "', `Email`='" . $Email . "', `Password`='" . $Password . "' where `Email` = '" . $Email . "'";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "Sua thanh cong.";
