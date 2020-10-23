@@ -54,10 +54,10 @@ if (isset($_POST["btnLogin"])) {
     $Email = $_POST["txtEmail"];
     $Password = $_POST["txtPassword"];
     // làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
-    // $Email = strip_tags($Email);
-    // $Email = addslashes($Email);
-    // $Password = strip_tags($Password);
-    // $Password = addslashes($Password);
+    $Email = strip_tags($Email);
+    $Email = addslashes($Email);
+    $Password = strip_tags($Password);
+    $Password = addslashes($Password);
     include("../../include/func/connection.php");
     $sql = "SELECT * FROM `admin` WHERE Email = '$Email' and Password = '$Password'";
     $result = mysqli_query($conn, $sql);
