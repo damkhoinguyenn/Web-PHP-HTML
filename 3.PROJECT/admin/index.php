@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['FullName'])) {
+if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
@@ -8,7 +8,7 @@ include("../include/header/headerAdmin.php");
 ?>
 
 <body>
-    <h6>Chúc mừng <?php echo $_SESSION['FullName'];  ?> đã đăng nhập thành công !</h6>
+    <h6>Chúc mừng <?php echo $_SESSION['Email'];  ?> đã đăng nhập thành công !</h6>
     <h1>DANH SACH SINH VIEN</h1>
     <table class="table">
         <thead>
@@ -19,13 +19,14 @@ include("../include/header/headerAdmin.php");
                 <th>Password</th>
                 <th>Edit</th>
                 <th>Delete</th>
+                <th><a href="editPage.php"></a>Edit Page</th>
                 <th><a href="operation/logout.php">Logout</a></th>
                 <th><a href="register.php">Register</a></th>
             </tr>
         </thead>
         <?php
-        require('../include/connection.php');
-        include("../include/functions.php");
+        require('../include/func/connection.php');
+        include("../include/func/functions.php");
         $users = getAllUsers();
         foreach ($users as $row) {
         ?>

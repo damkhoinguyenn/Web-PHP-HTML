@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['btnSave'])) {
-    require("../../include/connection.php");
-    require("../../include/functions.php");
+    require("../../include/func/connection.php");
+    require("../../include/func/functions.php");
     $FullName = $_POST['txtFullName'];
     $Email = $_POST['txtEmail'];
     $Password = $_POST['txtPassword'];
