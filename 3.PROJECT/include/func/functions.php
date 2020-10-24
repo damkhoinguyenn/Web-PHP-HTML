@@ -19,26 +19,26 @@ function getOneUser($Email)
     return $user;
 }
 // for admin
-function deleteUser($Email)
-{
-    global $conn;
-    $sql = "DELETE FROM `users` WHERE Email = '$Email'";
-    if (mysqli_query($conn, $sql))
-        return TRUE;
-    else
-        return FALSE;
-}
+// function deleteUser($Email)
+// {
+//     global $conn;
+//     $sql = "DELETE FROM `users` WHERE Email = '$Email'";
+//     if (mysqli_query($conn, $sql))
+//         return TRUE;
+//     else
+//         return FALSE;
+// }
 // for admin
-function editUser($FullName, $Email, $Password)
-{
-    global $conn;
-    $sql = "UPDATE `users` SET `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `Email` = '$Email' ";
-    $result = mysqli_query($conn, $sql);
-    if ($result) {
-        echo "Sua thanh cong.";
-        header("Location: ../../admin/index.php");
-        exit();
-    } else {
-        echo "Sua that bai.";
-    }
-}
+// function editUser($FullName, $Email, $Password)
+// {
+//     global $conn;
+//     $sql = "UPDATE `users` SET `FullName` ='$FullName', `Email`='$Email',`Password`='$Password' where `Email` = '$Email' ";
+//     $result = mysqli_query($conn, $sql);
+//     if ($result) {
+//         echo "Sua thanh cong.";
+//         header("Location: ../../admin/index.php");
+//         exit();
+//     } else {
+//         echo "Sua that bai.";
+//     }
+// }
