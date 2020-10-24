@@ -29,6 +29,7 @@ include("logoGV.php");
 							<a class="dropdown-item" href="#">Định Hướng Nghề Nghiệp</a>
 							<a class="dropdown-item" href="#">Mô hình đào tạo</a>
 							<a class="dropdown-item" href="#">Nghiệp vụ Sư phạm</a>
+							
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -39,6 +40,7 @@ include("logoGV.php");
 							<a class="dropdown-item" href="#">Các Trung Tâm NCKH</a>
 							<a class="dropdown-item" href="#">Viện Nghiện cứu Sư Phạm</a>
 							<a class="dropdown-item" href="#">Viện Khoa Học xã hội</a>
+							
 						</div>
 					</li>
 
@@ -52,6 +54,7 @@ include("logoGV.php");
 							<a class="dropdown-item" href="#">Bản đồ trường</a>
 							<a class="dropdown-item" href="#">E-learning</a>
 							<a class="dropdown-item" href="#">Tìm kiếm cán bộ</a>
+							<a class="dropdown-item" href="#">Login</a>
 						</div>
 					</li>
 

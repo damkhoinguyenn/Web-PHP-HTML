@@ -1,5 +1,5 @@
 <?php
-	include("../include/header/header.php");
+include("../include/header/header.php");
 ?>
 
 <!--Facebook-->
@@ -49,13 +49,13 @@
 				<div class="row">
 					<div class="col">
 						<div class="card" style="width: 15rem;">
-							<img width="10" height="200" src="../images/cse-hallthumb.jpg" class="card-img-top" alt="...">
+							<img width="5" height="150" src="../images/cse-hallthumb.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<a href="#" class="stretched-link">Lời chào mừng</a>
 							</div>
 						</div>
 						<div class="card" style="width: 15rem;">
-							<img width="10" height="200" src="../images/cse-tlu-narathumb.jpg" class="card-img-top" alt="...">
+							<img width="10" height="150" src="../images/cse-tlu-narathumb.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<a href="#" class="stretched-link">Nghiên cứu khoa học</a>
 							</div>
@@ -63,13 +63,13 @@
 					</div>
 					<div class="col">
 						<div class="card" style="width: 15rem;">
-							<img width="10" height="200" src="../images/gv-khoa-cnttthumb.jpg" class="card-img-top" alt="...">
+							<img width="10" height="150" src="../images/gv-khoa-cnttthumb.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<a href="#" class="stretched-link">Giảng viên</a>
 							</div>
 						</div>
 						<div class="card" style="width: 15rem;">
-							<img width="10" height="200" src="../images/k54th-tot-nghiep-1thumb.jpg" class="card-img-top" alt="...">
+							<img width="10" height="150" src="../images/k54th-tot-nghiep-1thumb.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<a href="#" class="stretched-link">Đào tạo</a>
 							</div>
@@ -77,7 +77,7 @@
 					</div>
 					<div class="col">
 						<div class="card" style="width: 15rem;">
-							<img width="5" height="470" src="../images/khoa43th.jpg" class="card-img-top" alt="...">
+							<img width="5" height="370" src="../images/khoa43th.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<a href="#" class="stretched-link">Ảnh khoa CNTT</a>
 							</div>
@@ -91,10 +91,11 @@
 				<blockquote cite="https://www.facebook.com/CodingPremium-115831256931511/" class="fb-xfbml-parse-ignore">
 					<a href="https://www.facebook.com/CodingPremium-115831256931511/">CodingPremium</a></blockquote>
 			</div>
+			
 		</div>
 	</div>
 </div>
 
 <?php
-include("../include/footer/footerGV.php");
+include("../include/footer/footer.php");
 ?>
