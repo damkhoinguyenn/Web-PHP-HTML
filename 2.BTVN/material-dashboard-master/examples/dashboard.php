@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="./edituser.php">
                             <i class="material-icons">person</i>
                             <p>User Profile</p>
                         </a>
@@ -104,7 +104,41 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
+                        <!-- người tạo ra trang web -->
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="javascript:;">
+                                        <img class="img" src="../assets/img/faces/nguyen.png" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-category text-gray">DEV</h6>
+                                    <h4 class="card-title">Đàm Nguyên</h4>
+                                    <p class="card-description">
+                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="javascript:;">
+                                        <img class="img" src="../assets/img/faces/nguyen.png" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-category text-gray">DEV</h6>
+                                    <h4 class="card-title">Đàm Nguyên</h4>
+                                    <p class="card-description">
+                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- đóng người tạo trang -->
                     </div>
                 </div>
             </div>

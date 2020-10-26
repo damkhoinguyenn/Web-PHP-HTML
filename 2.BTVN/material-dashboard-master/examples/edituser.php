@@ -140,7 +140,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col">
                             <div class="card">
                                 <div class="card-header card-header-primary">
                                     <h4 class="card-title">Edit Profile</h4>
@@ -195,19 +195,19 @@ The above copyright notice and this permission notice shall be included in all c
                             <div class="card card-profile">
                                 <div class="card-avatar">
                                     <a href="javascript:;">
-                                        <img class="img" src="../assets/img/faces/marc.jpg" />
+                                        <img class="img" src="../assets/img/faces/nguyen.png" />
                                     </a>
                                 </div>
                                 <div class="card-body">
-                                    <h6 class="card-category text-gray">CEO / Co-Founder</h6>
-                                    <h4 class="card-title">Alec Thompson</h4>
+                                    <h6 class="card-category text-gray">DEV</h6>
+                                    <h4 class="card-title">Đàm Nguyên</h4>
                                     <p class="card-description">
-                                        Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                                    Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
                                     </p>
-                                    <a href="javascript:;" class="btn btn-primary btn-round">Follow</a>
                                 </div>
                             </div>
                         </div> -->
+                        <!-- đóng người tạo trang -->
                     </div>
                 </div>
             </div>
