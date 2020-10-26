@@ -1,8 +1,9 @@
+<!-- headerlogo -->
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 	<div class="container">
 		<div class="col-2">
 			<div class="row">
-				<a href="" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
+				<a href="GVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
 
 			</div>
 		</div>
@@ -27,9 +28,13 @@
 		</div>
 	</div>
 </nav>
+<!--// headerlogo -->
 <!-- <a href="SVpage.php"><img src="../images/vi.jpg"></a> -->
 <!-- <a href="#"><img src="../images/en.jpg"></a> -->
-<div class="container">
+
+
+<!-- anh chay -->
+<div class="container ">
 	<div class="row">
 		<div class="col-12">
 			<?php
@@ -72,15 +77,18 @@
 		</div>
 	</div>
 </div>
+<!-- //anh chay -->
 
-<div class="container">
+
+<!-- topic -->
+<div class="container topics">
 	<div class="row">
 		<div class="col">
 			<button type="button" class="btn btn-primary btn-lg btn-block">Tin tức</button>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -89,10 +97,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card " style="height:100px;">
+			<div class="card " style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -101,10 +109,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -113,10 +121,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -129,10 +137,10 @@
 
 		<div class="col">
 			<button type="button" class="btn btn-primary btn-lg btn-block">Sự kiện</button>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -141,10 +149,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -153,10 +161,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -165,10 +173,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="card" style="height:100px;">
+			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="70" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/CSE logo blue.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -177,21 +185,106 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
+
 		<div class="col">
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe width="500" height="700" src="https://www.youtube.com/embed/g2bFaOrbESE" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
+			<div class="title">
+				<div class="section topics">
+					<h2 class="section-tittle">Phân hiệu-Khoa</h2>
+					<ul class="list-unstyled">
+						<li><a href="#">Khoa Công trình</a></li>
+						<li><a href="#">Khoa Kỹ thuật tài nguyên nước</a></li>
+						<li><a href="#">Khoa Công nghệ thông tin</a></li>
+						<li><a href="#">Khoa Cơ khí</a></li>
+						<li><a href="#">Khoa Điện - Điện tử</a></li>
+						<li><a href="#">Khoa Kinh tế và Quản lý</a></li>
+						<li><a href="#">Khoa Hóa và Môi trường</a></li>
+						<li><a href="#">Trung tâm Đào tạo quốc tế</a></li>
+						<li><a href="#">Phân hiệu Đại học Thủy lợi</a></li>
+						<li><a href="#">Viện Đào tạo và Khoa học ứng dụng Miền Trung</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- //topic -->
+
+
+<!-- content1 -->
+<div class="container">
+	<div class="row bg-light">
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/TuyenSinhDH.jpg" class="card-img" alt="...">
+				<a href="XTHBpage.php" class="stretched-link"></a>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/TuyenSinhThacSi.jpg" class="card-img" alt="...">
+				<a href="#" class="stretched-link"></a>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/TuyenSinhTS.jpg" class="card-img" alt="...">
+				<a href="#" class="stretched-link"></a>
+			</div>
 		</div>
 	</div>
 </div>
+<!-- //content1 -->
 
 
+<!-- content2 -->
+<div class="container ts">
+	<div class="row bg-warning">
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/CurentStudent.jpg" class="card-img" alt="...">
+				<a href="XTHBpage.php" class="stretched-link"></a>
+				<div class="card-body bg-success">
 
+					<a href="#" class="btn btn-warning stretched-link">Tìm hiểu</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/FutureStudent.jpg" class="card-img" alt="...">
+				<a href="#" class="stretched-link"></a>
+				<div class="card-body bg-success">
 
+					<a href="#" class="btn btn-warning stretched-link">Tìm hiểu</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card " style="width: 20rem;">
+				<img height="200" src="../images/Alumi.jpg" class="card-img" alt="...">
+				<a href="#" class="stretched-link"></a>
+				<div class="card-body bg-success ">
+					<a href="#" class="btn btn-warning stretched-link">Tìm hiểu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //content2 -->
 
-
-
-<?php
-include("../include/footer/footerGV.php");
+<!-- footer -->
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<?php
+			include("../include/footer/footerGV.php");
+			?>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
