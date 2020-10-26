@@ -1,4 +1,4 @@
-<footer class="page-footer font-small indigo bg-info ">
+<footer class="page-footer indigo bg-info ">
 	<div class="container text-center text-md-left ">
 		<div class="row">
 			<div class="col-md-3 mx-auto">
@@ -92,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-copyright text-center py-3">© 2020 Khoa CNTT-Đại Học Thủy Lợi
+	<div class="footer-copyright text-center py-3">
 		<h6>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-024.356.322.11.Email: <a href="main.php" class=" text-white"> CSE.TLU.EDU.VN</a> </h6>
 	</div>
 </footer>

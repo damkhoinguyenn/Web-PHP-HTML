@@ -32,11 +32,6 @@
         <div class="col-6 col-md-4">
           <a href="../admin/login.php">Login</a>
         </div>
-        <div class="col-6 col-md-4">
-          <a href="../user/SVpage.php"><img src="../images/vi.jpg"></a>
-          <!-- trang tieng anh -->
-          <a href="#"><img src="../images/en.jpg"></a>
-        </div>
       </div>
     </div>
   </nav>

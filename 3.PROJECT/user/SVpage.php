@@ -1,3 +1,34 @@
+<!-- headerlogo -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+	<div class="container">
+		<div class="col-2">
+			<div class="row">
+				<a href="GVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
+
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="row">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<span class="text-white">Ngôn ngữ:</span>
+						<a href="GVpage.php"><img src="../images/vi.jpg"></a>
+						<a href="#"><img src="../images/en.jpg"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col">
+			<div class="row">
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</nav>
+<!--// headerlogo -->
 <?php
 include("../include/header/header.php");
 ?>

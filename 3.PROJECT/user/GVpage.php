@@ -1,38 +1,37 @@
 <!-- headerlogo -->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-	<div class="container">
-		<div class="col-2">
-			<div class="row">
-				<a href="GVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
-
-			</div>
-		</div>
-		<div class="col-6">
-			<div class="row">
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<span class="text-white">Ngôn ngữ:</span>
-						<a href="GVpage.php"><img src="../images/vi.jpg"></a>
-						<a href="#"><img src="../images/en.jpg"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
+<div class="container hdl">
+	<div class="row">
 		<div class="col">
-			<div class="row">
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
-				</form>
-			</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+				<div class="col ">
+					<a href="GVpage.php" class=" text-white">Trường ĐH Thủy Lợi-TLU</a>
+				</div>
+				<div class="col-5">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<span class="text-white">Ngôn ngữ:</span>
+							<a href="GVpage.php"><img src="../images/vi.jpg"></a>
+							<a href="#"><img src="../images/en.jpg"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+						<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
+					</form>
+				</div>
 		</div>
+		</nav>
 	</div>
-</nav>
+</div>
+</div>
 <!--// headerlogo -->
 <!-- <a href="SVpage.php"><img src="../images/vi.jpg"></a> -->
 <!-- <a href="#"><img src="../images/en.jpg"></a> -->
 
-
+<!-- Font -->
+<script src="https://kit.fontawesome.com/b83b93c2d0.js" crossorigin="anonymous"></script>
 <!-- anh chay -->
 <div class="container ">
 	<div class="row">
@@ -197,7 +196,7 @@
 					<ul class="list-unstyled">
 						<li><a href="#">Khoa Công trình</a></li>
 						<li><a href="#">Khoa Kỹ thuật tài nguyên nước</a></li>
-						<li><a href="#">Khoa Công nghệ thông tin</a></li>
+						<li><a href="SVpage.php">Khoa Công nghệ thông tin</a></li>
 						<li><a href="#">Khoa Cơ khí</a></li>
 						<li><a href="#">Khoa Điện - Điện tử</a></li>
 						<li><a href="#">Khoa Kinh tế và Quản lý</a></li>
@@ -220,19 +219,19 @@
 	<div class="row bg-light">
 		<div class="col-4">
 			<div class="card " style="width: 20rem;">
-				<img height="200" src="../images/TuyenSinhDH.jpg" class="card-img" alt="...">
-				<a href="XTHBpage.php" class="stretched-link"></a>
+				<img height="180" src="../images/TuyenSinhDH.jpg" class="card-img" alt="...">
+				<a href="XTpages/XTHB.php" class="stretched-link"></a>
 			</div>
 		</div>
 		<div class="col-4">
 			<div class="card " style="width: 20rem;">
-				<img height="200" src="../images/TuyenSinhThacSi.jpg" class="card-img" alt="...">
+				<img height="180" src="../images/TuyenSinhThacSi.jpg" class="card-img" alt="...">
 				<a href="#" class="stretched-link"></a>
 			</div>
 		</div>
 		<div class="col-4">
 			<div class="card " style="width: 20rem;">
-				<img height="200" src="../images/TuyenSinhTS.jpg" class="card-img" alt="...">
+				<img height="180" src="../images/TuyenSinhTS.jpg" class="card-img" alt="...">
 				<a href="#" class="stretched-link"></a>
 			</div>
 		</div>
@@ -240,6 +239,42 @@
 </div>
 <!-- //content1 -->
 
+<div class="container nd">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row no-gutters bg-light position-relative">
+				<div class="col-md-6 mb-md-0 p-md-4">
+					<img src="..." class="w-100" alt="...">
+				</div>
+				<div class="col-md-6 position-static p-4 pl-md-0">
+					<h5 class="mt-0">Columns with stretched link</h5>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<a href="#" class="stretched-link">Go somewhere</a>
+				</div>
+			</div>
+			<div class="row no-gutters bg-light position-relative">
+				<div class="col-md-6 mb-md-0 p-md-4">
+					<img src="..." class="w-100" alt="...">
+				</div>
+				<div class="col-md-6 position-static p-4 pl-md-0">
+					<h5 class="mt-0">Columns with stretched link</h5>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<a href="#" class="stretched-link">Go somewhere</a>
+				</div>
+			</div>
+			<div class="row no-gutters bg-light position-relative">
+				<div class="col-md-6 mb-md-0 p-md-4">
+					<img src="..." class="w-100" alt="...">
+				</div>
+				<div class="col-md-6 position-static p-4 pl-md-0">
+					<h5 class="mt-0">Columns with stretched link</h5>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					<a href="#" class="stretched-link">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- content2 -->
 <div class="container ts">
@@ -278,13 +313,28 @@
 <!-- //content2 -->
 
 <!-- footer -->
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<?php
-			include("../include/footer/footerGV.php");
-			?>
+<div class="footer-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 bg-primary text-left">
+				<h4>
+					<span>© 2020 TRƯỜNG ĐẠI HỌC THỦY LỢI</span>
+				</h4>
+			</div>
+			<div class="col-md-4 bg-primary text-right">
+				<a href="https://www.facebook.com/daihocthuyloi1959/?fref=ts">
+					<img width="30px" height="30px" src="../images/fb-icon.png" alt="">
+				</a>
+				<a href="https://www.youtube.com/user/daihocthuyloi">
+					<img width="30px" height="30px" src="../images/ytb-icon.png" alt="">
+				</a>
+				<a href="https://twitter.com/Daihocthuyloihn">
+					<img width="30px" height="30px" src="../images/twitter-icon.png" alt="">
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
-<!-- //footer -->
+<?php
+include("../include/footer/footerGV.php");
+?>
