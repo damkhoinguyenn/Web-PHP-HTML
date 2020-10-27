@@ -94,30 +94,6 @@ The above copyright notice and this permission notice shall be included in all c
                             </div>
                         </form>
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">
-                                    <i class="material-icons">dashboard</i>
-                                    <p class="d-lg-none d-md-block">
-                                        Stats
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">notifications</i>
-                                    <span class="notification">5</span>
-                                    <p class="d-lg-none d-md-block">
-                                        Some Actions
-                                    </p>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                                    <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                                    <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                                    <a class="dropdown-item" href="#">Another Notification</a>
-                                    <a class="dropdown-item" href="#">Another One</a>
-                                </div>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">person</i>
@@ -127,7 +103,6 @@ The above copyright notice and this permission notice shall be included in all c
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                                     <a class="dropdown-item" href="#">Profile</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Log out</a>
                                 </div>
@@ -137,6 +112,8 @@ The above copyright notice and this permission notice shall be included in all c
                 </div>
             </nav>
             <!-- End Navbar -->
+
+            <!-- Open Edit -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -157,30 +134,28 @@ The above copyright notice and this permission notice shall be included in all c
                                             </div> -->
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label class="label">First Name</label>
+                                                    <label class="bmd-label-floating">First Name</label>
                                                     <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
                                                 </div>
                                             </div>
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label class="label">Last Name</label>
+                                                    <label class="bmd-label-floating">Last Name</label>
                                                     <input type="text" class="form-control" name="txtLastName" id="txtLastName">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class='col-sm-6'>
-                                                <input type='text' class="form-control" id='datetimepicker4' />
-                                            </div>
-                                            <script type="text/javascript">
-                                                $(function() {
-                                                    $('#datetimepicker4').datetimepicker();
-                                                });
-                                            </script>
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label class="label">Birthday</label>
+                                                    <label class="bmd-label-floating">Phone Number</label>
+                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Birthday</label>
                                                     <div class='input-group date' id='datetimepicker1'>
                                                         <input type='text' class="form-control" />
                                                         <span class="input-group-addon">
@@ -194,22 +169,49 @@ The above copyright notice and this permission notice shall be included in all c
                                                     $('#datetimepicker1').datetimepicker();
                                                 });
                                             </script>
+
                                             <div class="col">
-                                                <div class="input-group">
+
+
+                                                <div class="form-group">
                                                     <label class="label">Gender</label>
-                                                    <div class="p-t-10">
-                                                        <label class="radio-container m-r-45">Male
-                                                            <input type="radio" checked="checked" name="gender">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <label class="radio-container">Female
-                                                            <input type="radio" name="gender">
-                                                            <span class="checkmark"></span>
+                                                    <form action=""><br>
+                                                        <input type="radio" name="gender" value="male" checked> Male
+                                                        <input type="radio" name="gender" value="female"> Female
+                                                    </form>
+                                                    <!-- <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Male" checked>
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Male
                                                         </label>
                                                     </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Female">
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Female
+                                                        </label>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Email</label>
+                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="bmd-label-floating">Password</label>
+                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
 
                                         <div class="row">
                                             <div class="col-md-12">
@@ -248,6 +250,8 @@ The above copyright notice and this permission notice shall be included in all c
                     </div>
                 </div>
             </div>
+            <!-- End Edit -->
+
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="float-left">
