@@ -42,8 +42,7 @@ ul.list-unstyled.mt-3.mb-4 {
 .dropdown-menu {
     position: absolute;
     display: none;
-    background-color: dodgerblue;
-    margin: 10px;
+    background-color: white;
     padding: 10px 5px;
     z-index: 999;
     font-size: 14px;
@@ -51,11 +50,15 @@ ul.list-unstyled.mt-3.mb-4 {
 
 .dropdown-item {
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 .navbar-nav {
     margin-left: 150px;
+}
+
+.logogv{
+    border:1px solid rgb(0, 195, 255);
 }
 
 /* login */
@@ -85,6 +88,18 @@ ul.list-unstyled.mt-3.mb-4 {
 }
 .ts{
     padding-bottom: 10px;
+}
+
+.container.xt{
+    border: 1px solid red;
+}
+button.btn.btn-primary.btn-lg.btn-block{
+    border-radius: inherit;
+}
+
+/* form xét tuyển */
+.cont .all{
+    border: 1px solid rgba(0, 68, 255, 0.644);
 }
 
 /* .h5,

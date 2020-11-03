@@ -11,13 +11,31 @@ include("logoGV.php");
 			<div class="collapse navbar-collapse " id="collapsibleNavId">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
 					<li class="nav-item active ">
-						<a class="nav-link" href="main.php">Giới thiệu<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="main.php">Trang chủ<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownId">
+							<a class="dropdown-item" href="#">Thành lập</a>
+							<a class="dropdown-item" href="#">Đào tạo đại học</a>
+							<a class="dropdown-item" href="#">Lịch sử truyền thống</a>
+							<a class="dropdown-item" href="#">Sứ mệnh-Tầm nhìn-Mục tiêu</a>
+							<a class="dropdown-item" href="#">Cơ sở đào tạo</a>
+							<a class="dropdown-item" href="#">Hệ thống văn bằng</a>
+							<a class="dropdown-item" href="#">Đề án tuyển sinh</a>
+							
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Tin tức & Sự kiện</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Hợp tác quốc tế</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Xét tuyển đại học</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownId">
+							<a class="dropdown-item" href="#">Xét tuyển học bạ</a>
+							<a class="dropdown-item" href="#">Xét tuyển điểm thi THPT</a>
+							<a class="dropdown-item" href="#">Xét tuyển thẳng Đại học</a>
+						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đào tạo</a>
@@ -59,9 +77,7 @@ include("logoGV.php");
 					</li>
 
 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Liên hệ</a>
-					</li>
+					
 				</ul>
 			</div>
 		</nav>

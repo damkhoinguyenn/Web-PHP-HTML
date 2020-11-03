@@ -21,11 +21,13 @@
 </head>
 
 <body>
-  <nav class="navbar header">
-    <div class="col-sm-8">
-      <a class="navbar-brand" href="../user/GVpage.php">
-        <img src="../images/logotlu.png">
-      </a>
-    </div>
-  </nav>
+  <div class="logogv">
+    <nav class="navbar header">
+      <div class="col-sm-8">
+        <a class="navbar-brand" href="../user/GVpage.php">
+          <img src="../images/logotlu.png">
+        </a>
+      </div>
+    </nav>
+  </div>
 </body>
