@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2020 at 06:39 AM
+-- Generation Time: Nov 06, 2020 at 05:03 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -44,6 +44,26 @@ INSERT INTO `admin` (`Id`, `FullName`, `Email`, `Password`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `teacher`
+--
+
+CREATE TABLE `teacher` (
+  `Id` tinyint(10) NOT NULL,
+  `FullName` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `teacher`
+--
+
+INSERT INTO `teacher` (`Id`, `FullName`, `Email`, `Password`) VALUES
+(1, 'Nguyen', 'dammit2525@gmail.com', 'Damnguyen26');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -66,7 +86,9 @@ INSERT INTO `users` (`UserId`, `FullName`, `Email`, `Password`) VALUES
 (5, 'Nguyen', 'dammit2525@yahoo.com.vn', '$2y$10$Eu77kP2vtiO51uPAVbNkb.cmFJhxlJu.D6GSdhmw/P1'),
 (6, 'Nguyen', 'dammit@gmail.com', '$2y$10$rzn.2rtqcr/J8kBqu7c0i.prB4Etcs8vIBFym/gfq26'),
 (7, 'Nguyen Dam', 'dammit2@gmail.com', '$2y$10$x.EeJD3jfrSZfv4Y5Ygwfevn7RftrnPI/rUFN3OIMrL'),
-(8, 'Nguyen Dam', 'dammit25@gmail.com', '$2y$10$w04HCC7VbxHAubcJXe1m3uSK/e5ShI0tv7EzOz5OECU');
+(8, 'Nguyen Dam', 'dammit25@gmail.com', '$2y$10$w04HCC7VbxHAubcJXe1m3uSK/e5ShI0tv7EzOz5OECU'),
+(9, 'Nguyen Dam', 'dammit255@gmail.com', '$2y$10$ZV5LUzRtmum8ZMyd8hd7fe1HmA30nQ4TbaPvPTiSKmx'),
+(10, 'Nguyen Dam', 'dam@gmail.com', '$2y$10$9rTQRkPxvSCkIvPAQlDqK.z4XArbDc1GmfjedKxrx8e');
 
 --
 -- Indexes for dumped tables
@@ -76,6 +98,12 @@ INSERT INTO `users` (`UserId`, `FullName`, `Email`, `Password`) VALUES
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indexes for table `teacher`
+--
+ALTER TABLE `teacher`
   ADD PRIMARY KEY (`Id`);
 
 --
@@ -95,10 +123,16 @@ ALTER TABLE `admin`
   MODIFY `Id` tinyint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `teacher`
+--
+ALTER TABLE `teacher`
+  MODIFY `Id` tinyint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserId` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `UserId` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
