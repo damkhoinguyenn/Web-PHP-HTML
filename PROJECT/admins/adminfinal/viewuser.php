@@ -1,3 +1,14 @@
+<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,47 +33,26 @@
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-       
             <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
                     Creative Tim
                 </a></div>
-            <!-- các trang -->
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="./dashboard.php">
-                            <i class="material-icons">dashboard</i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./edituser.html">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="edituser.html">
                             <i class="material-icons">person</i>
                             <p>User Profile</p>
                         </a>
                     </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="./tablesusers.php">
-                            <i class="material-icons">content_paste</i>
-                            <p>Table List</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
-                        </a>
-                    </li>
                 </ul>
             </div>
-            <!-- đóng các trang -->
         </div>
         <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:;">Table List</a>
+                        <a class="navbar-brand" href="javascript:;">User Profile</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -99,100 +89,146 @@
                 </div>
             </nav>
             <!-- End Navbar -->
-            <!-- Table -->
+
+            <!-- Open Edit -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Teachers Table</h4>
-                                    <!-- <p class="card-category"> Here is a subtitle for this table</p> -->
+                                    <h4 class="card-title">Edit Profile</h4>
+                                    <p class="card-category">Complete your profile</p>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <th>UserId</th>
-                                                <th>Full Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </thead>
-                                            <tbody>
-                                                <?php
-                                                require('../../../3.PROJECT/include/func/connection.php');
-                                                include('../../../3.PROJECT/include/func/functions.php');
-                                                $users = getAllUsers();
-                                                foreach ($users as $row) {
-                                                ?>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row"><?php echo $row[0]; ?></td>
-                                                    <td><?php echo $row[1]; ?></td>
-                                                    <td><?php echo $row[2]; ?></td>
-                                                    <td><?php echo $row[3]; ?></td>
-                                                    <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
-                                                    <td><a href="delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        <?php
-                                                }
-                                        ?>
-                                        </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                        <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Students Table</h4>
-                                    <!-- <p class="card-category"> Here is a subtitle for this table</p> -->
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <th>UserId</th>
-                                                <th>Full Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </thead>
-                                            <tbody>
-                                                <?php
-                                                // require('../../../3.PROJECT/include/func/connection.php');
-                                                // include('../../../3.PROJECT/include/func/functions.php');
-                                                $users = getAllUsers();
-                                                foreach ($users as $row) {
-                                                ?>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row"><?php echo $row[0]; ?></td>
-                                                    <td><?php echo $row[1]; ?></td>
-                                                    <td><?php echo $row[2]; ?></td>
-                                                    <td><?php echo $row[3]; ?></td>
-                                                    <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
-                                                    <td><a href="delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        <?php
-                                                }
-                                        ?>
-                                        </tbody>
-                                        </table>
-                                    </div>
+                                    <form action="operation/edit.php" method="post">
+                                        <div class="row">
+                                            <!-- <div class="col">
+                                                <div class="form-group">
+                                                    <label for="label">Full Name</label>
+                                                    <input type="text" class="form-control" name="txtFullName" id="txtFullName" value="<?php echo $row['FullName']; ?>">
+                                                </div>
+                                            </div> -->
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">First Name</label>
+                                                    <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Last Name</label>
+                                                    <input type="text" class="form-control" name="txtLastName" id="txtLastName">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Phone Number</label>
+                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Birthday</label>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script type="text/javascript">
+                                                $(function() {
+                                                    $('#datetimepicker1').datetimepicker();
+                                                });
+                                            </script>
+
+                                            <div class="col">
+
+
+                                                <div class="form-group">
+                                                    <label class="label">Gender</label>
+                                                    <form action=""><br>
+                                                        <input type="radio" name="gender" value="male" checked> Male
+                                                        <input type="radio" name="gender" value="female"> Female
+                                                    </form>
+                                                    <!-- <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Male" checked>
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Female">
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Female
+                                                        </label>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Email</label>
+                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Password</label>
+                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Adress</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">City</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Country</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Postal Code</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <button type="submit" class="btn btn-primary pull-right" name="btnUpdate" id="btnUpdate">Update Profile</button>
+                                        <div class="clearfix"></div> -->
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Table -->
+            <!-- End Edit -->
+
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="float-left">

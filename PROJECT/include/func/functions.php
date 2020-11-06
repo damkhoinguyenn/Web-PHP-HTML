@@ -1,28 +1,69 @@
 <?php
-// for admin
-function getAllUsers()
+// for student
+function getAllStudents()
 {
     global $conn;
-    $sql = "SELECT * FROM `users` ";
+    $sql = "SELECT * FROM `students` ";
     $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_all($result);
-    return $user;
+    $students = mysqli_fetch_all($result);
+    return $students;
 }
-// for admin
-function getOneUser($Email)
+
+// for student
+function getOneStudent($Email)
 {
     global $conn;
     $Email = $_REQUEST['Email'];
-    $sql = "SELECT * FROM `users` WHERE Email = '$Email'";
+    $sql = "SELECT * FROM `students` WHERE Email = '$Email'";
     $result = mysqli_query($conn, $sql);
-    $user = mysqli_fetch_assoc($result);
-    return $user;
+    $student = mysqli_fetch_assoc($result);
+    return $student;
 }
+
+// for admin
+function getAllTeachers()
+{
+    global $conn;
+    $sql = "SELECT * FROM `teachers`";
+    $result = mysqli_query($conn, $sql);
+    $teachers = mysqli_fetch_all($result);
+    return $teachers;
+}
+
+// for student Xet Tuyen
+function getAllStudentsXT()
+{
+    global $conn;
+    $sql = "SELECT * FROM `enrollment`";
+    $result = mysqli_query($conn, $sql);
+    $students = mysqli_fetch_all($result);
+    return $students;
+}
+
+// for student Xet Tuyen
+function getOneStudentXT($Id)
+{
+    global $conn;
+    $sql = "SELECT * FROM `enrollment` WHERE Id = '$Id'";
+    $result = mysqli_query($conn, $sql);
+    $student = mysqli_fetch_assoc($result);
+    return $student;
+}
+
+// function deleteUser($id)
+// {
+//     global $conn;
+//     $sql = "DELETE FROM students WHERE userid = '$id'";
+//     if (mysqli_query($conn, $sql))
+//         return TRUE;
+//     else
+//         return FALSE;
+// }
 // for admin
 // function deleteUser($Email)
 // {
 //     global $conn;
-//     $sql = "DELETE FROM `users` WHERE Email = '$Email'";
+//     $sql = "DELETE FROM `students` WHERE Email = '$Email'";
 //     if (mysqli_query($conn, $sql))
 //         return TRUE;
 //     else
