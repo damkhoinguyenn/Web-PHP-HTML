@@ -32,9 +32,9 @@ include("logoGV.php");
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Xét tuyển đại học</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownId">
-							<a class="dropdown-item" href="#">Xét tuyển học bạ</a>
-							<a class="dropdown-item" href="#">Xét tuyển điểm thi THPT</a>
-							<a class="dropdown-item" href="#">Xét tuyển thẳng Đại học</a>
+							<a class="dropdown-item" href="../user/XTpages/XTHB.php">Xét tuyển học bạ</a>
+							<a class="dropdown-item" href="../user/XTpages/DHB.php">Xét tuyển điểm thi THPT</a>
+							<a class="dropdown-item" href="../user/XTpages/XTHB.php">Xét tuyển thẳng Đại học</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">

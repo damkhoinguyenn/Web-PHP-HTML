@@ -106,7 +106,7 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card " style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/tuyensinh.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -118,7 +118,7 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/inra1.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -130,11 +130,11 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/thuk.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<a href="#" class="stretched-link">Đảng bộ Trường Đại học Thủy lợi thực hiện thắng lợi các nhiệm vụ 9 tháng đầu năm 2020</a>
+							<a href="#" class="stretched-link">Chàng trai thủ khoa chọn ĐH Thủy lợi từ hơn 1 năm trước</a>
 						</div>
 					</div>
 				</div>
@@ -162,7 +162,7 @@ if (!isset($_SESSION['Email'])) {
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+							<a href="#" class="stretched-link">Đăng ký tham gia Cuộc thi “Sinh viên Thủy lợi với ý tưởng khởi nghiệp” năm 2021</a>
 						</div>
 					</div>
 				</div>
@@ -174,7 +174,7 @@ if (!isset($_SESSION['Email'])) {
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+							<a href="#" class="stretched-link">Thông báo Tuyển sinh Chương trình Meister School khóa 19</a>
 						</div>
 					</div>
 				</div>
@@ -186,7 +186,7 @@ if (!isset($_SESSION['Email'])) {
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
-							<a href="#" class="stretched-link">Thông báo tổ chức thi và cấp chứng chỉ tiếng Anh bậc 2, 3, 4, 5</a>
+							<a href="#" class="stretched-link">Công ty TNHH Mosaic Việt Nam tuyển dụng nhân viên kinh doanh</a>
 						</div>
 					</div>
 				</div>
