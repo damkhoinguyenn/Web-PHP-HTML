@@ -30,7 +30,7 @@
     <div class="col-sm-4">
       <div class="row">
         <div class="col-6 col-md-4">
-          <a href="../admin/login.php">Login</a>
+          <a href="loginteacher.php">Login</a>
         </div>
       </div>
     </div>

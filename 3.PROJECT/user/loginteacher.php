@@ -1,15 +1,27 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<title>Title</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+<?php
+include("../include/header/logo.php");
+if (isset($_POST["btnLoginTeacher"])) {
+	$Email = $_POST["txtEmail"];
+	$Password = $_POST["txtPassword"];
+	// làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
+	$Email = strip_tags($Email);
+	$Email = addslashes($Email);
+	$Password = strip_tags($Password);
+	$Password = addslashes($Password);
+	include("../include/func/connection.php");
+	$sql = "SELECT * FROM `teacher` WHERE Email = '$Email' and Password = '$Password'";
+	$result = mysqli_query($conn, $sql);
+	$num_rows = mysqli_num_rows($result);
+	if ($num_rows == 0) {
+		echo "Tên đăng nhập hoặc mật khẩu không đúng !";
+	} else {
+		session_start();
+		// $_SESSION['FullName'] = $row['FullName'];
+		$_SESSION['Email'] = $Email;
+		header('Location: GVpage.php');
+	}
+}
+?>
 
 <div class="container">
 	<div class="row">
@@ -40,7 +52,7 @@
 				</div>
 
 				<div class="form-group">
-					<input type="submit" class="form-control btn btn-primary" value="Đăng nhập" name="btnLogin" id="btnLogin">
+					<input type="submit" class="form-control btn btn-primary" value="Đăng nhập" name="btnLoginTeacher" id="btnLoginTeacher">
 				</div>
 
 				<div>

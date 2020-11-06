@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['Email'])) {
+    header("Location: loginteacher.php");
+    exit();
+}
+?>
 <!-- headerlogo -->
 <div class="container hdl">
 	<div class="row">
