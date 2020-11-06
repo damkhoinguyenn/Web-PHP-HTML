@@ -23,7 +23,7 @@
 <body>
   <nav class="navbar header">
     <div class="col-sm-8">
-      <a class="navbar-brand" href="../user/GVpage.php">
+      <a class="navbar-brand" href="../user/SVpage.php">
         <img src="../images/logo.jpg">
       </a>
     </div>
