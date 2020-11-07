@@ -1,9 +1,9 @@
 <?php
-session_start();
-if (!isset($_SESSION['Email'])) {
-    header("Location: loginteacher.php");
-    exit();
-}
+// session_start();
+// if (!isset($_SESSION['Email'])) {
+//     header("Location: loginteacher.php");
+//     exit();
+// }
 ?>
 <!-- headerlogo -->
 <div class="container hdl">
@@ -106,7 +106,7 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card " style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/dai-hoc-thuy-loi.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -118,7 +118,7 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/inra1.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -130,7 +130,7 @@ if (!isset($_SESSION['Email'])) {
 			<div class="card" style="height:120px;">
 				<div class="row no-gutters">
 					<div class="col-md-4">
-						<img width="10" height="100" src="../images/chaok62.jpg" class="card-img" alt="...">
+						<img width="10" height="100" src="../images/cse-tlu-narathumb.jpg" class="card-img" alt="...">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">

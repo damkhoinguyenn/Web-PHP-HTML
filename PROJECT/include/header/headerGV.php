@@ -72,7 +72,7 @@ include("logoGV.php");
 							<a class="dropdown-item" href="#">Bản đồ trường</a>
 							<a class="dropdown-item" href="#">E-learning</a>
 							<a class="dropdown-item" href="#">Tìm kiếm cán bộ</a>
-							<a class="dropdown-item" href="#">Login</a>
+							<a class="dropdown-item" href="../User/loginteacher.php">Login</a>
 						</div>
 					</li>
 
