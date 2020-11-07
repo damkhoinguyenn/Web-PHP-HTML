@@ -1,14 +1,3 @@
-<!--
-=========================================================
-Material Dashboard - v2.1.2
-=========================================================
-
-Product Page: https://www.creative-tim.com/product/material-dashboard
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
-
-=========================================================
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,45 +15,33 @@ The above copyright notice and this permission notice shall be included in all c
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="./dashboard.html">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="./edituser.html">
-                            <i class="material-icons">person</i>
-                            <p>User Profile</p>
-                        </a>
-                    </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./tables.html">
+                        <a class="nav-link" href="tablesusers.php">
                             <i class="material-icons">content_paste</i>
                             <p>Table List</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
+                        <a class="nav-link" href="tablesXT.php">
+                            <i class="material-icons">content_paste</i>
+                            <p>Table StudentXT</p>
                         </a>
                     </li>
                 </ul>
@@ -75,7 +52,7 @@ The above copyright notice and this permission notice shall be included in all c
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:;">User Profile</a>
+                        <a class="navbar-brand" href="javascript:;">Dashboard</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -112,167 +89,64 @@ The above copyright notice and this permission notice shall be included in all c
                 </div>
             </nav>
             <!-- End Navbar -->
-
-            <!-- Open Edit -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title">Edit Profile</h4>
-                                    <p class="card-category">Complete your profile</p>
+                        <!-- người tạo ra trang web -->
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="javascript:;">
+                                        <img class="img" src="../assets/img/faces/nguyen.png" />
+                                    </a>
                                 </div>
                                 <div class="card-body">
-                                    <form action="operation/edit.php" method="post">
-                                        <div class="row">
-                                            <!-- <div class="col">
-                                                <div class="form-group">
-                                                    <label for="label">Full Name</label>
-                                                    <input type="text" class="form-control" name="txtFullName" id="txtFullName" value="<?php echo $row['FullName']; ?>">
-                                                </div>
-                                            </div> -->
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">First Name</label>
-                                                    <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Last Name</label>
-                                                    <input type="text" class="form-control" name="txtLastName" id="txtLastName">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Phone Number</label>
-                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Birthday</label>
-                                                    <div class='input-group date' id='datetimepicker1'>
-                                                        <input type='text' class="form-control" />
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <script type="text/javascript">
-                                                $(function() {
-                                                    $('#datetimepicker1').datetimepicker();
-                                                });
-                                            </script>
-
-                                            <div class="col">
-
-
-                                                <div class="form-group">
-                                                    <label class="label">Gender</label>
-                                                    <form action=""><br>
-                                                        <input type="radio" name="gender" value="male" checked> Male
-                                                        <input type="radio" name="gender" value="female"> Female
-                                                    </form>
-                                                    <!-- <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Male" checked>
-                                                        <label class="form-check-label" for="GenderRadios">
-                                                            Male
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Female">
-                                                        <label class="form-check-label" for="GenderRadios">
-                                                            Female
-                                                        </label>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Email</label>
-                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label for="bmd-label-floating">Password</label>
-                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Adress</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">City</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Country</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Postal Code</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary pull-right" name="btnUpdate" id="btnUpdate">Update Profile</button>
-                                        <div class="clearfix"></div>
-                                    </form>
+                                    <h6 class="card-category text-gray">DEV</h6>
+                                    <h4 class="card-title">Đàm Nguyên</h4>
+                                    <p class="card-description">
+                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="javascript:;">
+                                        <img class="img" src="../assets/img/faces/nguyen.png" />
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-category text-gray">DEV</h6>
+                                    <h4 class="card-title">Đàm Nguyên</h4>
+                                    <p class="card-description">
+                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- đóng người tạo trang -->
                     </div>
                 </div>
             </div>
-            <!-- End Edit -->
 
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="float-left">
                         <ul>
                             <li>
-                                <a href="https://www.creative-tim.com">
-                                    Creative Tim
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://creative-tim.com/presentation">
+                                <a href="#">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="http://blog.creative-tim.com">
+                                <a href="#">
                                     Blog
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.creative-tim.com/license">
+                                <a href="#">
                                     Licenses
                                 </a>
                             </li>
@@ -287,74 +161,6 @@ The above copyright notice and this permission notice shall be included in all c
                     </div>
                 </div>
             </footer>
-        </div>
-    </div>
-    <div class="fixed-plugin">
-        <div class="dropdown show-dropdown">
-            <a href="#" data-toggle="dropdown">
-                <i class="fa fa-cog fa-2x"> </i>
-            </a>
-            <ul class="dropdown-menu">
-                <li class="header-title"> Sidebar Filters</li>
-                <li class="adjustments-line">
-                    <a href="javascript:void(0)" class="switch-trigger active-color">
-                        <div class="badge-colors ml-auto mr-auto">
-                            <span class="badge filter badge-purple" data-color="purple"></span>
-                            <span class="badge filter badge-azure" data-color="azure"></span>
-                            <span class="badge filter badge-green" data-color="green"></span>
-                            <span class="badge filter badge-warning" data-color="orange"></span>
-                            <span class="badge filter badge-danger" data-color="danger"></span>
-                            <span class="badge filter badge-rose active" data-color="rose"></span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </a>
-                </li>
-                <li class="header-title">Images</li>
-                <li class="active">
-                    <a class="img-holder switch-trigger" href="javascript:void(0)">
-                        <img src="../assets/img/sidebar-1.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="img-holder switch-trigger" href="javascript:void(0)">
-                        <img src="../assets/img/sidebar-2.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="img-holder switch-trigger" href="javascript:void(0)">
-                        <img src="../assets/img/sidebar-3.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="img-holder switch-trigger" href="javascript:void(0)">
-                        <img src="../assets/img/sidebar-4.jpg" alt="">
-                    </a>
-                </li>
-                <li class="button-container">
-                    <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
-                </li>
-                <!-- <li class="header-title">Want more components?</li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
-                  Get the pro version
-                </a>
-            </li> -->
-                <li class="button-container">
-                    <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
-                        View Documentation
-                    </a>
-                </li>
-                <li class="button-container github-star">
-                    <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                </li>
-                <li class="header-title">Thank you for 95 shares!</li>
-                <li class="button-container text-center">
-                    <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
-                    <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
-                    <br>
-                    <br>
-                </li>
-            </ul>
         </div>
     </div>
     <!--   Core JS Files   -->
@@ -423,7 +229,6 @@ The above copyright notice and this permission notice shall be included in all c
                 }
 
                 $('.fixed-plugin a').click(function(event) {
-                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
                     if ($(this).hasClass('switch-trigger')) {
                         if (event.stopPropagation) {
                             event.stopPropagation();
@@ -557,18 +362,22 @@ The above copyright notice and this permission notice shall be included in all c
                         }, 300);
                     }
 
-                    // we simulate the window Resize so the charts will get updated in realtime.
                     var simulateWindowResize = setInterval(function() {
                         window.dispatchEvent(new Event('resize'));
                     }, 180);
 
-                    // we stop the simulation of Window Resize after the animations are completed
                     setTimeout(function() {
                         clearInterval(simulateWindowResize);
                     }, 1000);
 
                 });
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            md.initDashboardPageCharts();
+
         });
     </script>
 </body>

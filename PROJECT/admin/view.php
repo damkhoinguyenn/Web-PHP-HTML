@@ -42,16 +42,10 @@ $student = getOneStudent($Email);
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="bg-success text-white" name="btnSave" id="btnSave">
-                        Luu Lai
+                    <button type="back" class="bg-light " name="btnCancel" id="btnCancel">
+                        <a class="btnCancel" href="index.php">Cancel</a>
                     </button>
                 </div>
-
-                <!-- <div class="form-group">
-                        <button type="back" class="bg-light " name="btnCancel" id="btnCancel">
-                            <a class="btnCancel" href="index.php">Cancel</a>
-                        </button>
-                    </div> -->
 
             </form>
         </div>

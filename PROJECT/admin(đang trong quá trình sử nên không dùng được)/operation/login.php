@@ -68,6 +68,6 @@ if (isset($_POST["btnLogin"])) {
         session_start();
         // $_SESSION['FullName'] = $row['FullName'];
         $_SESSION['Email'] = $Email;
-        header('Location: ../index.php');
+        header('Location: dashboard.php');
     }
 }

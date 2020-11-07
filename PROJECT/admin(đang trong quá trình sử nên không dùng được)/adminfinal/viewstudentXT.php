@@ -15,45 +15,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item active  ">
-                        <a class="nav-link" href="./dashboard.html">
-                            <i class="material-icons">dashboard</i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./edituser.php">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="edituser.html">
                             <i class="material-icons">person</i>
-                            <p>User Profile</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./tables.html">
-                            <i class="material-icons">content_paste</i>
-                            <p>Table List</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
+                            <p>Student Profile</p>
                         </a>
                     </li>
                 </ul>
@@ -64,7 +40,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:;">Dashboard</a>
+                        <!-- <a class="navbar-brand" href="javascript:;">User Profile</a> -->
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -101,47 +77,145 @@
                 </div>
             </nav>
             <!-- End Navbar -->
+
+            <!-- Open Edit -->
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <!-- người tạo ra trang web -->
-                        <div class="col-md-4">
-                            <div class="card card-profile">
-                                <div class="card-avatar">
-                                    <a href="javascript:;">
-                                        <img class="img" src="../assets/img/faces/nguyen.png" />
-                                    </a>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header card-header-primary">
+                                    <h4 class="card-title">StudentXT</h4>
+                                    <!-- <p class="card-category">Complete your profile</p> -->
                                 </div>
                                 <div class="card-body">
-                                    <h6 class="card-category text-gray">DEV</h6>
-                                    <h4 class="card-title">Đàm Nguyên</h4>
-                                    <p class="card-description">
-                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                                    <form action="operation/edit.php" method="post">
+                                        <div class="row">
+                                            <!-- <div class="col">
+                                                <div class="form-group">
+                                                    <label for="label">Full Name</label>
+                                                    <input type="text" class="form-control" name="txtFullName" id="txtFullName" value="<?php echo $row['FullName']; ?>">
+                                                </div>
+                                            </div> -->
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">First Name</label>
+                                                    <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Last Name</label>
+                                                    <input type="text" class="form-control" name="txtLastName" id="txtLastName">
+                                                </div>
+                                            </div>
+                                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card card-profile">
-                                <div class="card-avatar">
-                                    <a href="javascript:;">
-                                        <img class="img" src="../assets/img/faces/nguyen.png" />
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-category text-gray">DEV</h6>
-                                    <h4 class="card-title">Đàm Nguyên</h4>
-                                    <p class="card-description">
-                                        Nghèo không là xấu, nghèo mà không có chí mới là xấu; hèn không đáng ghét, hèn mà không có tài mới đáng ghét; già không nên than thở, già mà sống thừa mới đáng than thở; chết không nên bi ai, chết mà vô bổ mới đáng bi ai.
-                                    </p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Phone Number</label>
+                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Birthday</label>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <script type="text/javascript">
+                                                $(function() {
+                                                    $('#datetimepicker1').datetimepicker();
+                                                });
+                                            </script>
+
+                                            <div class="col">
+
+
+                                                <div class="form-group">
+                                                    <label class="label">Gender</label>
+                                                    <form action=""><br>
+                                                        <input type="radio" name="gender" value="male" checked> Male
+                                                        <input type="radio" name="gender" value="female"> Female
+                                                    </form>
+                                                    <!-- <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Male" checked>
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Female">
+                                                        <label class="form-check-label" for="GenderRadios">
+                                                            Female
+                                                        </label>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Email</label>
+                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Password</label>
+                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Adress</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">City</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Country</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Postal Code</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <button type="submit" class="btn btn-primary pull-right" name="btnUpdate" id="btnUpdate">Update Profile</button>
+                                        <div class="clearfix"></div> -->
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <!-- đóng người tạo trang -->
                     </div>
                 </div>
             </div>
+            <!-- End Edit -->
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -246,7 +320,6 @@
                 }
 
                 $('.fixed-plugin a').click(function(event) {
-                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
                     if ($(this).hasClass('switch-trigger')) {
                         if (event.stopPropagation) {
                             event.stopPropagation();
@@ -380,25 +453,16 @@
                         }, 300);
                     }
 
-                    // we simulate the window Resize so the charts will get updated in realtime.
                     var simulateWindowResize = setInterval(function() {
                         window.dispatchEvent(new Event('resize'));
                     }, 180);
 
-                    // we stop the simulation of Window Resize after the animations are completed
                     setTimeout(function() {
                         clearInterval(simulateWindowResize);
                     }, 1000);
 
                 });
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            // Javascript method's body can be found in assets/js/demos.js
-            md.initDashboardPageCharts();
-
         });
     </script>
 </body>

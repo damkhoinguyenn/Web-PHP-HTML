@@ -15,42 +15,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-       
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <!-- các trang -->
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="nav-item  ">
-                        <a class="nav-link" href="./dashboard.php">
+                        <a class="nav-link" href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./edituser.html">
-                            <i class="material-icons">person</i>
-                            <p>User Profile</p>
-                        </a>
-                    </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="./tablesusers.php">
+                        <a class="nav-link" href="tablesusers.php">
                             <i class="material-icons">content_paste</i>
                             <p>Table List</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./notifications.html">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="tablesXT.php">
+                            <i class="material-icons">content_paste</i>
+                            <p>Table StudentXT</p>
                         </a>
                     </li>
                 </ul>
@@ -106,7 +98,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Teachers Table</h4>
+                                    <h4 class="card-title ">XT Table</h4>
                                     <!-- <p class="card-category"> Here is a subtitle for this table</p> -->
                                 </div>
                                 <div class="card-body">
@@ -115,17 +107,18 @@
                                             <thead>
                                                 <th>UserId</th>
                                                 <th>Full Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
+                                                <th>Gender</th>
+                                                <th>Birthday</th>
+                                                <th>View</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                             </thead>
                                             <tbody>
                                                 <?php
-                                                require('../../../3.PROJECT/include/func/connection.php');
-                                                include('../../../3.PROJECT/include/func/functions.php');
-                                                $users = getAllUsers();
-                                                foreach ($users as $row) {
+                                                require('../../include/func/connection.php');
+                                                include('../../include/func/functions.php');
+                                                $student = getAllStudentsXT();
+                                                foreach ($student as $row) {
                                                 ?>
                                             <tbody>
                                                 <tr>
@@ -133,51 +126,9 @@
                                                     <td><?php echo $row[1]; ?></td>
                                                     <td><?php echo $row[2]; ?></td>
                                                     <td><?php echo $row[3]; ?></td>
-                                                    <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
-                                                    <td><a href="delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        <?php
-                                                }
-                                        ?>
-                                        </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                        <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Students Table</h4>
-                                    <!-- <p class="card-category"> Here is a subtitle for this table</p> -->
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <th>UserId</th>
-                                                <th>Full Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </thead>
-                                            <tbody>
-                                                <?php
-                                                // require('../../../3.PROJECT/include/func/connection.php');
-                                                // include('../../../3.PROJECT/include/func/functions.php');
-                                                $users = getAllUsers();
-                                                foreach ($users as $row) {
-                                                ?>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row"><?php echo $row[0]; ?></td>
-                                                    <td><?php echo $row[1]; ?></td>
-                                                    <td><?php echo $row[2]; ?></td>
-                                                    <td><?php echo $row[3]; ?></td>
-                                                    <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
-                                                    <td><a href="delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
+                                                    <td><a href="viewstudentXT.php?Student=<?php echo $row[0]; ?>">view</a></td>
+                                                    <td><a href="edit.php?Student=<?php echo $row[0]; ?>">edit</a></td>
+                                                    <td><a href="delete.php?Student=<?php echo $row[0]; ?>">delete</a></td>
                                                 </tr>
                                             </tbody>
                                         <?php
