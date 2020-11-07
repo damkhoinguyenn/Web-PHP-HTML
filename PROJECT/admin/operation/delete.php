@@ -1,13 +1,14 @@
 <?php
-require("../include/func/connection.php");
+require("../../include/func/connection.php");
+include("../../include/func/functions.php");
 session_start();
 if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
 $Email = $_GET['Email'];
-$user = getOneUser($Email);
-$sql = "DELETE FROM `users` WHERE Email = '$Email'";
+$student = getOneStudent($Email);
+$sql = "DELETE FROM `students` WHERE Email = '$Email'";
 if (mysqli_query($conn, $sql)) {
     header("Location: ../index.php");
     exit();

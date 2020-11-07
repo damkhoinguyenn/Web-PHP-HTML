@@ -15,15 +15,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -43,12 +42,6 @@
                         <a class="nav-link" href="tablesXT.php">
                             <i class="material-icons">content_paste</i>
                             <p>Table StudentXT</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="notifications.php">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
                         </a>
                     </li>
                 </ul>
@@ -236,7 +229,6 @@
                 }
 
                 $('.fixed-plugin a').click(function(event) {
-                    // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
                     if ($(this).hasClass('switch-trigger')) {
                         if (event.stopPropagation) {
                             event.stopPropagation();
@@ -370,12 +362,10 @@
                         }, 300);
                     }
 
-                    // we simulate the window Resize so the charts will get updated in realtime.
                     var simulateWindowResize = setInterval(function() {
                         window.dispatchEvent(new Event('resize'));
                     }, 180);
 
-                    // we stop the simulation of Window Resize after the animations are completed
                     setTimeout(function() {
                         clearInterval(simulateWindowResize);
                     }, 1000);
@@ -386,7 +376,6 @@
     </script>
     <script>
         $(document).ready(function() {
-            // Javascript method's body can be found in assets/js/demos.js
             md.initDashboardPageCharts();
 
         });

@@ -15,16 +15,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <!-- các trang -->
             <div class="sidebar-wrapper">
@@ -45,12 +43,6 @@
                         <a class="nav-link" href="tablesXT.php">
                             <i class="material-icons">content_paste</i>
                             <p>Table StudentXT</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="notifications.php">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
                         </a>
                     </li>
                 </ul>

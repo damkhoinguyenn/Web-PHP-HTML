@@ -49,7 +49,6 @@
 //     exit();
 // }
 
-session_start();
 if (isset($_POST["btnLogin"])) {
     $Email = $_POST["txtEmail"];
     $Password = $_POST["txtPassword"];

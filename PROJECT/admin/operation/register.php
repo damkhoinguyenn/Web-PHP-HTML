@@ -31,7 +31,7 @@ if (isset($_POST['btnSave'])) {
         exit();
     } // kiểm tra email đã tồn tại trong db hay chưa
     else {
-        $sql = "SELECT * FROM `users` WHERE Email = ?";
+        $sql = "SELECT * FROM `students` WHERE Email = ?";
         $result = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($result, $sql)) {
             header("Location: ../register.php?error=sqlerror");
@@ -47,7 +47,7 @@ if (isset($_POST['btnSave'])) {
                 header("Location: ../register.php?error=emailtaken&fullName=" . $FullName);
                 exit();
             } else {
-                $sql = "INSERT INTO `users`( `FullName`, `Email`, `Password`) VALUES (?, ?, ?)";
+                $sql = "INSERT INTO `students`( `FullName`, `Email`, `Password`) VALUES (?, ?, ?)";
                 $result = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($result, $sql)) {
                     header("Location: ../register.php?error=sqlerror");

@@ -1,14 +1,3 @@
-<!--
-=========================================================
-Material Dashboard - v2.1.2
-=========================================================
-
-Product Page: https://www.creative-tim.com/product/material-dashboard
-Copyright 2020 Creative Tim (https://www.creative-tim.com)
-Coded by Creative Tim
-
-=========================================================
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,15 +15,14 @@ The above copyright notice and this permission notice shall be included in all c
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-            <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
+            <div class="logo"><a href="#" class="simple-text logo-normal">
+                    Admin
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -52,7 +40,7 @@ The above copyright notice and this permission notice shall be included in all c
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:;">User Profile</a>
+                        <!-- <a class="navbar-brand" href="javascript:;">User Profile</a> -->
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -103,22 +91,10 @@ The above copyright notice and this permission notice shall be included in all c
                                 <div class="card-body">
                                     <form action="operation/edit.php" method="post">
                                         <div class="row">
-                                            <!-- <div class="col">
-                                                <div class="form-group">
-                                                    <label for="label">Full Name</label>
-                                                    <input type="text" class="form-control" name="txtFullName" id="txtFullName" value="<?php echo $row['FullName']; ?>">
-                                                </div>
-                                            </div> -->
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label class="bmd-label-floating">First Name</label>
-                                                    <input type="text" class="form-control" name="txtFirstName" id="txtFirstName">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Last Name</label>
-                                                    <input type="text" class="form-control" name="txtLastName" id="txtLastName">
+                                                    <label class="bmd-label-floating">Full Name</label>
+                                                    <input type="text" class="form-control" name="txtFullName" id="txtFullName" value = "<?php echo $student['FullName'];?>">
                                                 </div>
                                             </div>
                                         </div>
@@ -127,7 +103,7 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Phone Number</label>
-                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone">
+                                                    <input type="text" class="form-control" name="txtPhone" id="txtPhone" >
                                                 </div>
                                             </div>
                                             <div class="col">
@@ -141,33 +117,14 @@ The above copyright notice and this permission notice shall be included in all c
                                                     </div>
                                                 </div>
                                             </div>
-                                            <script type="text/javascript">
-                                                $(function() {
-                                                    $('#datetimepicker1').datetimepicker();
-                                                });
-                                            </script>
 
                                             <div class="col">
-
-
                                                 <div class="form-group">
                                                     <label class="label">Gender</label>
                                                     <form action=""><br>
                                                         <input type="radio" name="gender" value="male" checked> Male
                                                         <input type="radio" name="gender" value="female"> Female
                                                     </form>
-                                                    <!-- <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Male" checked>
-                                                        <label class="form-check-label" for="GenderRadios">
-                                                            Male
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="GenderRadios" id="GenderRadios" value="Female">
-                                                        <label class="form-check-label" for="GenderRadios">
-                                                            Female
-                                                        </label>
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -176,13 +133,13 @@ The above copyright notice and this permission notice shall be included in all c
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Email</label>
-                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail">
+                                                    <input type="text" class="form-control" name="txtEmail" id="txtEmail" value = "<?php echo $student['Email'];?>">
                                                 </div>
                                             </div>
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Password</label>
-                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
+                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword" value = "<?php echo $student['Password'];?>">
                                                 </div>
                                             </div>
 

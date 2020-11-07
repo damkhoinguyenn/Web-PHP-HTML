@@ -19,8 +19,7 @@ if (!isset($_SESSION['Email'])) {
 </head>
 
 <body>
-    <h6>Chúc mừng <?php echo $_SESSION['Email'];  ?> đã đăng nhập thành công !</h6>
-    <h1>DANH SACH SINH VIEN DANG HOC TAI TRUONG</h1>
+    <h1>DANH SACH GIAO VIEN DANG LAM VIEC TAI TRUONG</h1>
     <table class="table">
         <thead>
             <tr>
@@ -28,21 +27,17 @@ if (!isset($_SESSION['Email'])) {
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Password</th>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
-                <th><a href="editPage.php">Edit Page</a></th>
-                <th><a href="operation/logout.php">Logout</a></th>
-                <th><a href="register.php">Register</a></th>
-                <th><a href="xetTuyen.php">Xet Tuyen</a></th>
-                <th><a href="tableTeachers.php">Giao vien</a></th>
+                <!-- <th>View</th> -->
+                <!-- <th>Edit</th>
+                <th>Delete</th> -->
+                <th><a href="index.php">MainPage</a></th>
             </tr>
         </thead>
         <?php
         require('../include/func/connection.php');
         include("../include/func/functions.php");
-        $students = getAllStudents();
-        foreach ($students as $row) {
+        $teachers = getAllTeachers();
+        foreach ($teachers as $row) {
         ?>
             <tbody>
                 <tr>
@@ -50,9 +45,9 @@ if (!isset($_SESSION['Email'])) {
                     <td><?php echo $row[1]; ?></td>
                     <td><?php echo $row[2]; ?></td>
                     <td><?php echo $row[3]; ?></td>
-                    <td><a href="view.php?User=<?php echo $row[0]; ?>">view</a></td>
+                    <!-- <td><a href="view.php?User=<?php echo $row[0]; ?>">view</a></td>
                     <td><a href="edit.php?User=<?php echo $row[0]; ?>">edit</a></td>
-                    <td><a href="operation/delete.php?User=<?php echo $row[0]; ?>">delete</a></td>
+                    <td><a href="operation/delete.php?User=<?php echo $row[0]; ?>">delete</a></td> -->
                 </tr>
             </tbody>
         <?php

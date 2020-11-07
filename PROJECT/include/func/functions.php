@@ -13,14 +13,13 @@ function getAllStudents()
 function getOneStudent($Email)
 {
     global $conn;
-    $Email = $_REQUEST['Email'];
-    $sql = "SELECT * FROM `students` WHERE Email = '$Email'";
+    $sql = "SELECT * FROM `students` WHERE `Email` = '$Email'";
     $result = mysqli_query($conn, $sql);
     $student = mysqli_fetch_assoc($result);
     return $student;
 }
 
-// for admin
+// for teacher
 function getAllTeachers()
 {
     global $conn;
@@ -30,14 +29,24 @@ function getAllTeachers()
     return $teachers;
 }
 
+// for teacher
+function getOneTeacher($Email)
+{
+    global $conn;
+    $sql = "SELECT * FROM `students` WHERE `Email` = '$Email'";
+    $result = mysqli_query($conn, $sql);
+    $student = mysqli_fetch_assoc($result);
+    return $student;
+}
+
 // for student Xet Tuyen
 function getAllStudentsXT()
 {
     global $conn;
     $sql = "SELECT * FROM `enrollment`";
     $result = mysqli_query($conn, $sql);
-    $students = mysqli_fetch_all($result);
-    return $students;
+    $studentsXT = mysqli_fetch_all($result);
+    return $studentsXT;
 }
 
 // for student Xet Tuyen
@@ -46,8 +55,8 @@ function getOneStudentXT($Id)
     global $conn;
     $sql = "SELECT * FROM `enrollment` WHERE Id = '$Id'";
     $result = mysqli_query($conn, $sql);
-    $student = mysqli_fetch_assoc($result);
-    return $student;
+    $studentXT = mysqli_fetch_assoc($result);
+    return $studentXT;
 }
 
 // function deleteUser($id)
