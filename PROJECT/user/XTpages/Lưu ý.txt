@@ -1,0 +1,1 @@
+Để chạy 1 cách ổn định hãy sửa như trong code file addtoDB.php đã nêu 

@@ -29,7 +29,7 @@ if (isset($_POST["btnLoginTeacher"])) {
 		</div>
 
 		<div class="col bg">
-			<form action="operation/login.php" method="post">
+			<form action="" method="post">
 				<h1 class="logins"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 
 				<?php
@@ -57,12 +57,12 @@ if (isset($_POST["btnLoginTeacher"])) {
 
 				<div>
 					<!-- sửa thành trang tạo tài khoản khi có -->
-					Bạn chưa có tài khoản? <a href="#" class="">Gửi yêu cầu</a> tạo tài khoản mới
+					<!-- Bạn chưa có tài khoản? <a href="#" class="">Gửi yêu cầu</a> tạo tài khoản mới -->
 				</div>
 
 				<div>
 					<!-- sửa thành trang đổi mật khẩu khi có -->
-					<a href="#" class="">Bạn đã quên mật khẩu?</a>
+					<!-- <a href="#" class="">Bạn đã quên mật khẩu?</a> -->
 				</div>
 
 			</form>

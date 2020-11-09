@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 07, 2020 at 05:35 AM
+-- Generation Time: Nov 09, 2020 at 04:42 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -108,7 +108,9 @@ INSERT INTO `students` (`UserId`, `FullName`, `Email`, `Password`) VALUES
 (8, 'Nguyen Dam', 'dammit25@gmail.com', '$2y$10$w04HCC7VbxHAubcJXe1m3uSK/e5ShI0tv7EzOz5OECU'),
 (9, 'Nguyen Dam', 'dammit255@gmail.com', '$2y$10$ZV5LUzRtmum8ZMyd8hd7fe1HmA30nQ4TbaPvPTiSKmx'),
 (10, 'Nguyen Dam', 'dam@gmail.com', '$2y$10$9rTQRkPxvSCkIvPAQlDqK.z4XArbDc1GmfjedKxrx8e'),
-(11, 'Nguyen Dam', 'asdasdasdas@gmail.com', '$2y$10$lj.bfS64QZr2xthcTsDzrOZtEmdR1vWmYZgaLOEUaB6');
+(11, 'Nguyen Dam', 'asdasdasdas@gmail.com', '$2y$10$lj.bfS64QZr2xthcTsDzrOZtEmdR1vWmYZgaLOEUaB6'),
+(12, 'Nguyen Dam', 'asdasdasdasd525@gmail.com', '$2y$10$.HGmGZsQerL9Sx3Y.pCXgeIMnFI9h66oWyieDd9x1yp'),
+(13, 'Nguyen Dam', 'damfdsgsdafsadf@gmail.com', '$2y$10$mm5q2I26C3xiiGzb2Nfp5egDRWjDTNAk3gWn/CBTUiS');
 
 -- --------------------------------------------------------
 
@@ -178,7 +180,7 @@ ALTER TABLE `enrollment`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `UserId` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `UserId` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `teachers`
