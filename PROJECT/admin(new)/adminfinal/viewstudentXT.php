@@ -147,12 +147,6 @@ include("includes/headeradmin.php")
                                                     <input type="text" class="form-control" name="txtEmail" id="txtEmail">
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Password</label>
-                                                    <input class="form-control" type="password" name="txtPassword" id="txtPassword">
-                                                </div>
-                                            </div>
 
                                         </div>
 
