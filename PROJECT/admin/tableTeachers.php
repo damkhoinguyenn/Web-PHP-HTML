@@ -16,9 +16,45 @@ if (!isset($_SESSION['Email'])) {
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
+<div class="navad">
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+            <a class="navbar-brand" href="#">DASHBOARD</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tùy chọn</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="xetTuyen.php">Xét tuyển học bạ</a>
+                            <a class="dropdown-item" href="tableTeachers.php">Quản lí tài khoản Giáo Viên</a>
+                        </div>
+                    </li>
+                </ul>
+                <li class="nav-item dropdown list-unstyled">
+                    <a class="nav-link log1 dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h6>Xin chào,<?php echo $_SESSION['Email']; ?></h6>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="">Logout</a>
+                    </div>
+                </li>
+
+            </div>
+        </nav>
+    </div>
     <h1>DANH SACH GIAO VIEN DANG LAM VIEC TAI TRUONG</h1>
     <table class="table">
         <thead>

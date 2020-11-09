@@ -24,8 +24,7 @@ if (!isset($_SESSION['Email'])) {
     <div class="navad">
         <nav class="navbar navbar-expand-sm navbar-light bg-primary">
             <a class="navbar-brand" href="#">DASHBOARD</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -45,12 +44,14 @@ if (!isset($_SESSION['Email'])) {
                     </li>
                 </ul>
                 <li class="nav-item dropdown list-unstyled">
-                        <a class="nav-link log1 dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h6>Xin chào,<?php echo $_SESSION['Email']; ?></h6></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="">Logout</a>
-                        </div>
+                    <a class="nav-link log1 dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h6>Xin chào,<?php echo $_SESSION['Email']; ?></h6>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="">Logout</a>
+                    </div>
                 </li>
-                
+
             </div>
         </nav>
     </div>
@@ -66,7 +67,7 @@ if (!isset($_SESSION['Email'])) {
                 <th>Thêm</th>
                 <th>Sửa</th>
                 <th>Xóa</th>
-                
+
             </tr>
         </thead>
         <?php
