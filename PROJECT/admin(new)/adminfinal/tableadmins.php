@@ -4,7 +4,7 @@ if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
-include("includes/headeradmin.php")
+include("includes/headeradmin.php");
 ?>
 
 <body class="">
@@ -93,5 +93,5 @@ include("includes/headeradmin.php")
             </div>
             <!-- End Table -->
             <?php
-            include("includes/footeradmin.php")
+            include("includes/footeradmin.php");
             ?>

@@ -4,13 +4,13 @@ if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
-include("includes/headeradmin.php")
+include("includes/headeradmin.php");
 ?>
 
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-            <div class="logo"><a href="#" class="simple-text logo-normal">
+            <div class="logo"><a href="dashboard.php" class="simple-text logo-normal">
                     Admin
                 </a></div>
             <!-- các trang -->
@@ -173,5 +173,5 @@ include("includes/headeradmin.php")
             </div>
             <!-- End Table -->
             <?php
-            include("includes/footeradmin.php")
+            include("includes/footeradmin.php");
             ?>
