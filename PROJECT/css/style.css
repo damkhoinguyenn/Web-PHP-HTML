@@ -26,6 +26,9 @@ ul.list-unstyled.mt-3.mb-4 {
 }
 
 /* navbar */
+.log1{
+    border: none;
+}
 .nav-link {
     color: black !important;
     display: block;
@@ -100,6 +103,9 @@ button.btn.btn-primary.btn-lg.btn-block{
 /* form xét tuyển */
 .cont .all{
     border: 1px solid rgba(0, 68, 255, 0.644);
+}
+.h1t{
+    
 }
 
 /* .h5,

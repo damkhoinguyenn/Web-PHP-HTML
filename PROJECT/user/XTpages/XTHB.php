@@ -29,6 +29,7 @@
 
   </div>
   <div class="cont">
+    <form action="">
     <div class="container all">
       <div class="row">
         <div class="col-sm-10">
@@ -349,6 +350,7 @@
         </div>
       </div>
     </div>
+    </form>
   </div>
 
   <!-- Optional JavaScript -->
