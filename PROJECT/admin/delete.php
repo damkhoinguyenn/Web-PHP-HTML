@@ -4,10 +4,6 @@ if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
-require('../include/func/connection.php');
-include("../include/func/functions.php");
-$Email = $_GET['Email'];
-$student = getOneStudent($Email)
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,11 +17,6 @@ $student = getOneStudent($Email)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<script>
-    function ConfirmDelete() {
-        confirm("Are you sure you want to delete?");
-    }
-</script>
 
 <main class="container">
     <div class="row">

@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="col bg">
-			<form action="../Works/CSE485_1851171686_DamKhoiNguyen/PROJECT/admins/operation/login.php" method="post">
+			<form action="includes/login.php" method="post">
 				<h1 class="logins"><span style="color:blue">L</span><span style="color:red">O</span><span style="color:yellow">G</span><span style="color:green">I</span><span style="color:violet">N</span></h1>
 
 				<?php
