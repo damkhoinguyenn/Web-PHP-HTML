@@ -9,6 +9,15 @@ function getAllStudents()
     return $students;
 }
 
+function getAllAdmins()
+{
+    global $conn;
+    $sql = "SELECT * FROM `admin` ";
+    $result = mysqli_query($conn, $sql);
+    $admins = mysqli_fetch_all($result);
+    return $admins;
+}
+
 // for student
 function getOneStudent($Email)
 {

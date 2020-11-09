@@ -1,11 +1,11 @@
 <?php
-include("../../../include/func/connection.php");
-include("../../../include/func/functions.php");
 session_start();
 if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
+include("../../../include/func/connection.php");
+include("../../../include/func/functions.php");
 // $Email = $_GET['Email'];
 // $student = getOneStudent($Email);
 $sql = "DELETE FROM `students` WHERE `Email` = '$Email'";

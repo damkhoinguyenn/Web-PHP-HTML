@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
+}
 if (isset($_POST['btnSave'])) {
     include("../../../include/func/connection.php");
     include("../../../include/func/functions.php");

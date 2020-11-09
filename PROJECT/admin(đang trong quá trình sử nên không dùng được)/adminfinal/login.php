@@ -43,16 +43,6 @@
 					<input type="submit" class="form-control btn btn-primary" value="Đăng nhập" name="btnLogin" id="btnLogin">
 				</div>
 
-				<div>
-					<!-- sửa thành trang tạo tài khoản khi có -->
-					Bạn chưa có tài khoản? <a href="#" class="">Gửi yêu cầu</a> tạo tài khoản mới
-				</div>
-
-				<div>
-					<!-- sửa thành trang đổi mật khẩu khi có -->
-					<a href="#" class="">Bạn đã quên mật khẩu?</a>
-				</div>
-
 			</form>
 		</div>
 

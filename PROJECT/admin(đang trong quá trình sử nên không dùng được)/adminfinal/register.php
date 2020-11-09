@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
+}
 include("includes/headeradmin.php")
 ?>
 

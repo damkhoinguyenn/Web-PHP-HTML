@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['Email'])) {
+    header("Location: login.php");
+    exit();
+}
 include("includes/headeradmin.php")
 ?>
 
@@ -42,7 +47,7 @@ include("includes/headeradmin.php")
                                     </p>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="tableadmins.php">Profile</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="includes/logout.php">Log out</a>
                                 </div>
