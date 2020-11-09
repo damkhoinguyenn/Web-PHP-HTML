@@ -23,7 +23,7 @@ if (!isset($_SESSION['Email'])) {
 <body>
     <div class="navad">
         <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-            <a class="navbar-brand" href="#">DASHBOARD</a>
+            <a class="navbar-brand" href="#"><Span style="color: yellow;"><h2>DashBoardAdmin</h2></Span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,47 +48,51 @@ if (!isset($_SESSION['Email'])) {
                         <h6>Xin chào,<?php echo $_SESSION['Email']; ?></h6>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="">Logout</a>
+                        <a class="dropdown-item" href="operation/logout.php">Logout</a>
                     </div>
                 </li>
 
             </div>
         </nav>
     </div>
-    <!-- <a class="dropdown-item" href="operation/logout.php">Logout</a> -->
-    <h1 class="h1t">DANH SÁCH THÔNG TIN SINH VIÊN ĐANG HỌC TẠI TRƯỜNG</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>UserId</th>
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Thêm</th>
-                <th>Sửa</th>
-                <th>Xóa</th>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped">
+                    <thead class = "thead-dark">
+                        <tr>
+                            <th>UserId</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Thêm</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
 
-            </tr>
-        </thead>
-        <?php
-        require('../include/func/connection.php');
-        include("../include/func/functions.php");
-        $students = getAllStudents();
-        foreach ($students as $row) {
-        ?>
-            <tbody>
-                <tr>
-                    <td scope="row"><?php echo $row[0]; ?></td>
-                    <td><?php echo $row[1]; ?></td>
-                    <td><?php echo $row[2]; ?></td>
-                    <td><?php echo $row[3]; ?></td>
-                    <td><a href="register.php?User=<?php echo $row[0]; ?>"><i class="fas fa-user-plus"></i></a> </td>
-                    <td><a href="edit.php?User=<?php echo $row[0]; ?>"><i class="fas fa-edit"> </i></a></td>
-                    <td><a href="operation/delete.php?User=<?php echo $row[0]; ?>"><i class="fas fa-trash-alt"></i></a></td>
-                </tr>
-            </tbody>
-        <?php
-        }
-        ?>
-    </table>
+                        </tr>
+                    </thead>
+                    <?php
+                    require('../include/func/connection.php');
+                    include("../include/func/functions.php");
+                    $students = getAllStudents();
+                    foreach ($students as $row) {
+                    ?>
+                        <tbody>
+                            <tr>
+                                <td scope="row"><?php echo $row[0]; ?></td>
+                                <td><?php echo $row[1]; ?></td>
+                                <td><?php echo $row[2]; ?></td>
+                                <td><?php echo $row[3]; ?></td>
+                                <td><a href="register.php?User=<?php echo $row[0]; ?>"><i class="fas fa-user-plus"></i></a> </td>
+                                <td><a href="edit.php?User=<?php echo $row[0]; ?>"><i class="fas fa-edit"> </i></a></td>
+                                <td><a href="operation/delete.php?User=<?php echo $row[0]; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                    <?php
+                    }
+                    ?>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
