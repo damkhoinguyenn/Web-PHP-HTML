@@ -29,7 +29,7 @@
 
   </div>
   <div class="cont">
-    <form action="">
+    <form action="addtoDB.php" method="post">
     <div class="container all">
       <div class="row">
         <div class="col-sm-10">
@@ -344,7 +344,7 @@
               </div>
             </div>
             <div class="col-md mt-2">
-                <button type="button" class="btn btn-primary ">Gửi đơn đăng kí</button>
+                <button type="button" class="btn send btn-primary ">Gửi đơn đăng kí</button>
               </div>
           </div>
         </div>

@@ -23,7 +23,9 @@ if (!isset($_SESSION['Email'])) {
 <body>
     <div class="navad">
         <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-            <a class="navbar-brand" href="#"><Span style="color: yellow;"><h2>DashBoardAdmin</h2></Span></a>
+            <a class="navbar-brand" href="#"><Span style="color: yellow;">
+                    <h2>DashBoardStudent</h2>
+                </Span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,13 +61,12 @@ if (!isset($_SESSION['Email'])) {
         <div class="row">
             <div class="col-sm-12">
                 <table class="table table-striped">
-                    <thead class = "thead-dark">
+                    <thead class="thead-dark">
                         <tr>
                             <th>UserId</th>
                             <th>Full Name</th>
                             <th>Email</th>
                             <th>Password</th>
-                            <th>Thêm</th>
                             <th>Sửa</th>
                             <th>Xóa</th>
 
@@ -83,15 +84,15 @@ if (!isset($_SESSION['Email'])) {
                                 <td><?php echo $row[1]; ?></td>
                                 <td><?php echo $row[2]; ?></td>
                                 <td><?php echo $row[3]; ?></td>
-                                <td><a href="register.php?User=<?php echo $row[0]; ?>"><i class="fas fa-user-plus"></i></a> </td>
-                                <td><a href="edit.php?User=<?php echo $row[0]; ?>"><i class="fas fa-edit"> </i></a></td>
-                                <td><a href="operation/delete.php?User=<?php echo $row[0]; ?>"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="edit.php?id=<?php echo $row[0]; ?>"><i class="fas fa-edit"> </i></a></td>
+                                <td><a href="delete.php?id=<?php echo $row[0]; ?>"><i class="fas fa-trash-alt"></i></a></td>
                             </tr>
                         </tbody>
                     <?php
                     }
                     ?>
                 </table>
+                <a href="add.php" class="btn btn-success"><i class="fas fa-user"></i> Thêm mới</a>
             </div>
         </div>
     </div>

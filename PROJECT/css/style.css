@@ -32,6 +32,7 @@ ul.list-unstyled.mt-3.mb-4 {
 .nav-link {
     color: black !important;
     display: block;
+    justify-items: center;
     border-right: 1px dotted black;
     border-left: 1px dotted black;;
     font-size: 14.5px;
