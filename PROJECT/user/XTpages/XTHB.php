@@ -24,331 +24,331 @@
       </div>
     </div>
   </div>
-  <form action="addtoDB.php"method="post">
-  <div class="cont">
-    <form action="addtoDB.php" method="post">
-      <div class="container all">
-        <div class="row">
-          <div class="col-sm-10">
-            <!-- form1 -->
-            <div class="container">
-              <div class="row 1">
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Họ và tên</div>
+  <form action="addtoDB.php" method="post">
+    <div class="cont">
+      <form action="addtoDB.php" method="post">
+        <div class="container all">
+          <div class="row">
+            <div class="col-sm-10">
+              <!-- form1 -->
+              <div class="container">
+                <div class="row 1">
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Họ và tên</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhâp tên">
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhâp tên">
+                  </div>
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup">Giới tính</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Giới tính</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup">Giới tính</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Giới tính</div>
+                <div class="row 2">
+                  <div class="col-sm-6">
+                    <label class="sr-only" for="inlineFormInputGroup">Nhập ngày tháng năm sinh</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Ngày Sinh</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập ngày tháng năm sinh">
                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Dân tộc</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập tên">
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Tôn giáo</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập tên">
+                    </div>
+                  </div>
+                </div>
+                <div class="row 3">
+                  <div class="col">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Nơi sinh</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Năm tốt nghiệp</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row 4">
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Học lực lớp 12</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Hạnh kiểm lớp 12</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row 5">
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Số CMND/CCCD</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập CMND">
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Ngày cấp</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ngày cấp">
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Nơi cấp</div>
+                      </div>
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row 6">
+                  <div class="col-sm-12">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Hộ khẩu thường trú</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập Hộ khẩu thường trú">
+                    </div>
+                    <small class="form-text text-muted">Ghi rõ tên tỉnh(Thành phố),huyện(Quận),xã(Phường)vào ô hộ khẩu thường trú.</small>
+                    <h6>Nơi học THPT hoặc tương đương(ghi tên trường và địa chỉ trường:huyện(quận),tỉnh(thành phố)):</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- form2 -->
+              <div class="container form2">
+                <div class="row 7">
+                  <div class="col-sm">
+                    <small class="form-text text-muted">Niên khóa</small>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Năm lớp 10</div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Năm lớp 11</div>
+                      </div>
+                    </div>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Năm lớp 12</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <small class="form-text text-muted">Năm lớp</small>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-sm-3 ">
+                    <small class="form-text text-muted">Tên tỉnh/TP</small>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <small class="form-text text-muted">Mã trường</small>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                    <div class="input-group-prepend  mb-2">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 ">
+                    <small class="form-text text-muted">Tên trường</small>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="input-group-prepend mb-2">
+                      <select id="inputState" class="form-control">
+                        <option selected>-Chọn-</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row 8">
+                  <div class="col">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Địa chỉ liên hệ</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập địa chỉ">
+                    </div>
+                  </div>
+                </div>
+                <div class="row 9">
+                  <div class="col-sm">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Điện thoại thí sinh</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập số điện thoại">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Điện thoại phụ huynh</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập số điện thoại">
+                    </div>
+                  </div>
+                </div>
+                <div class="row 10">
+                  <div class="col-sm-9">
+                    <h6>Đối tượng ưu tiên tuyển sinh(Thuộc đối tượng nào thì chọn đối tượng bên phải).</h6>
+                  </div>
+                  <div class="col-sm-3 mb-2">
                     <select id="inputState" class="form-control">
                       <option selected>-Chọn-</option>
                       <option>...</option>
                     </select>
                   </div>
                 </div>
-              </div>
-              <div class="row 2">
-                <div class="col-sm-6">
-                  <label class="sr-only" for="inlineFormInputGroup">Nhập ngày tháng năm sinh</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Ngày Sinh</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập ngày tháng năm sinh">
+                <div class="row 11">
+                  <div class="col-sm-9">
+                    <h6>Khu vực ưu tiên tuyển sinh(Thuộc khu vực nào thì chọn kí hiệu của khu vực:KV1,KV2,KV3,KV4)vào ô bên phải.</h6>
                   </div>
-                </div>
-                <div class="col-sm-3">
-                  <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Dân tộc</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập tên">
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <label class="sr-only" for="inlineFormInputGroup">Nhập tên</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Tôn giáo</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập tên">
-                  </div>
-                </div>
-              </div>
-              <div class="row 3">
-                <div class="col">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Nơi sinh</div>
-                    </div>
+                  <div class="col-sm-3 mb-2">
                     <select id="inputState" class="form-control">
                       <option selected>-Chọn-</option>
-                      <option>...</option>
+                      <option>KV1</option>
+                      <option>KV2</option>
+                      <option>KV3</option>
                     </select>
                   </div>
                 </div>
-                <div class="col">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Năm tốt nghiệp</div>
-                    </div>
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row 4">
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Học lực lớp 12</div>
-                    </div>
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Hạnh kiểm lớp 12</div>
-                    </div>
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row 5">
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Số CMND/CCCD</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập CMND">
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Ngày cấp</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ngày cấp">
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Nơi cấp</div>
-                    </div>
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row 6">
-                <div class="col-sm-12">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Hộ khẩu thường trú</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập Hộ khẩu thường trú">
-                  </div>
-                  <small class="form-text text-muted">Ghi rõ tên tỉnh(Thành phố),huyện(Quận),xã(Phường)vào ô hộ khẩu thường trú.</small>
-                  <h6>Nơi học THPT hoặc tương đương(ghi tên trường và địa chỉ trường:huyện(quận),tỉnh(thành phố)):</h6>
-                </div>
-              </div>
-            </div>
-            <!-- form2 -->
-            <div class="container form2">
-              <div class="row 7">
-                <div class="col-sm">
-                  <small class="form-text text-muted">Niên khóa</small>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Năm lớp 10</div>
-                    </div>
-                  </div>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Năm lớp 11</div>
-                    </div>
-                  </div>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Năm lớp 12</div>
+                <div class="row 12">
+                  <div class="col-sm mb-2">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Xét tuyển bằng tổng điểm trung bình lớp 12 bằng 3 môn</label>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm">
-                  <small class="form-text text-muted">Năm lớp</small>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                </div>
-                <div class="col-sm-3 ">
-                  <small class="form-text text-muted">Tên tỉnh/TP</small>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm">
-                  <small class="form-text text-muted">Mã trường</small>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                  <div class="input-group-prepend  mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                  </div>
-                </div>
-                <div class="col-sm-4 ">
-                  <small class="form-text text-muted">Tên trường</small>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="input-group-prepend mb-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>-Chọn-</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row 8">
-                <div class="col">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Địa chỉ liên hệ</div>
+                <div class="row 13">
+                  <div class="col-sm ">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">Xét tuyển bằng tổng điểm trung bình 3 học kỳ(Kì 1 và kì 2 lớp 11,kì 1 lớp 12)</label>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập địa chỉ">
                   </div>
                 </div>
-              </div>
-              <div class="row 9">
-                <div class="col-sm">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Điện thoại thí sinh</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập số điện thoại">
-                  </div>
+                <div class="col-md mt-2">
+                  <button type="button" class="btn send btn-primary ">Gửi đơn đăng kí</button>
                 </div>
-                <div class="col">
-                  <label class="sr-only" for="inlineFormInputGroup"></label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">Điện thoại phụ huynh</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nhập số điện thoại">
-                  </div>
-                </div>
-              </div>
-              <div class="row 10">
-                <div class="col-sm-9">
-                  <h6>Đối tượng ưu tiên tuyển sinh(Thuộc đối tượng nào thì chọn đối tượng bên phải).</h6>
-                </div>
-                <div class="col-sm-3 mb-2">
-                  <select id="inputState" class="form-control">
-                    <option selected>-Chọn-</option>
-                    <option>...</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row 11">
-                <div class="col-sm-9">
-                  <h6>Khu vực ưu tiên tuyển sinh(Thuộc khu vực nào thì chọn kí hiệu của khu vực:KV1,KV2,KV3,KV4)vào ô bên phải.</h6>
-                </div>
-                <div class="col-sm-3 mb-2">
-                  <select id="inputState" class="form-control">
-                    <option selected>-Chọn-</option>
-                    <option>KV1</option>
-                    <option>KV2</option>
-                    <option>KV3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row 12">
-                <div class="col-sm mb-2">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Xét tuyển bằng tổng điểm trung bình lớp 12 bằng 3 môn</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row 13">
-                <div class="col-sm ">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Xét tuyển bằng tổng điểm trung bình 3 học kỳ(Kì 1 và kì 2 lớp 11,kì 1 lớp 12)</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md mt-2">
-                <button type="button" class="btn send btn-primary ">Gửi đơn đăng kí</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </form>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
