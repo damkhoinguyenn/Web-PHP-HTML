@@ -4,15 +4,14 @@ if (!isset($_SESSION['Email'])) {
     header("Location: login.php");
     exit();
 }
-include("../../../include/func/connection.php");
+$Email = $_GET['Email'];
+require("../../../include/func/connection.php");
 include("../../../include/func/functions.php");
-// $Email = $_GET['Email'];
-// $student = getOneStudent($Email);
-$sql = "DELETE FROM `students` WHERE `Email` = '$Email'";
-if (mysqli_query($conn, $sql)) {
+
+if (deleteUser($Email)) {
     header("Location: ../tablesusers.php");
     exit();
 } else {
-    echo "Error deleting record: " . mysqli_error($conn);
+    echo "Xay ra loi....";
 }
 mysqli_close($conn);

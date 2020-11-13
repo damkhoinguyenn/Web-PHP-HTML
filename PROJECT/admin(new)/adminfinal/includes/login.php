@@ -1,6 +1,6 @@
 <?php
 // if (isset($_POST['btnLogin'])) {
-//     require '../../include/func/connection.php';
+//     require("../../../include/func/connection.php");
 //     $Email = $_POST["txtEmail"];
 //     $Password = $_POST["txtPassword"];
 
@@ -22,7 +22,7 @@
 //             $resultCheck = mysqli_stmt_get_result($result);
 //             if ($row = mysqli_fetch_assoc($resultCheck)) {
 //                 // kiểm tra password nhập vào có khớp với password trong db hay không
-//                 $PasswordCheck = password_verify($Password, $row['Password']);
+//                 $PasswordCheck = password_verify($Password, $row['Password']); // đang bị lỗi ở đây chưa tìm được cách sửa 
 //                 if ($PasswordCheck == false) {
 //                     header("Location: ../login.php?error=passworddoesnotmatchdatabase");
 //                     exit();
@@ -31,9 +31,9 @@
 //                 // đã phần sẽ trả ra bool
 //                 elseif ($PasswordCheck == true) {
 //                     session_start();
-//                     $_SESSION['FullName'] = $row['FullName'];
-//                     // $_SESSION['Email'] = $row['Email'];
-//                     header('Location: ../index.php');
+//                     // $_SESSION['FullName'] = $row['FullName'];
+//                     $_SESSION['Email'] = $Email;
+//                     header('Location: ../dashboard.php');
 //                 } else {
 //                     header("Location: ../login.php?error=wrongpassword");
 //                     exit();
