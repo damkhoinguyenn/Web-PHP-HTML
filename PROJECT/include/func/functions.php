@@ -68,15 +68,15 @@ function getOneStudentXT($Id)
     return $studentXT;
 }
 
-// function deleteUser($id)
-// {
-//     global $conn;
-//     $sql = "DELETE FROM students WHERE userid = '$id'";
-//     if (mysqli_query($conn, $sql))
-//         return TRUE;
-//     else
-//         return FALSE;
-// }
+function deleteUser($id)
+{
+    global $conn;
+    $sql = "DELETE FROM students WHERE UserId = '$id'";
+    if (mysqli_query($conn, $sql))
+        return TRUE;
+    else
+        return FALSE;
+}
 // for admin
 // function deleteUser($Email)
 // {
