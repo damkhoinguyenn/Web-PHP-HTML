@@ -28,7 +28,7 @@ if (isset($_POST['btnSend'])) {
         $PhoneParent = $_POST[''];
 
         $sql = "INSERT INTO `enrollment`( `FullName`, `Gender`, `Birthday`,'Ethnic','Relligion','Place','Yeargra','Rank12','Att12','CMND','DataCMND','PlaceCMND','BornPlace','Year10','CodeSchool10','Year11','CodeSchool11','Year12','CodeSchool12','PlaceContact','PhoneStudents','PhoneParent') 
-        VALUES ('$FullName','')";
+        VALUES ('$FullName','$Gender')";
         $result = mysqli_query($conn, $sql) or die();
         if ($result) {
             echo "form send successfully";
